@@ -1,0 +1,116 @@
+{
+  "verification": {
+    "max_abs_prob_diff_2008": 8.881784197001252e-16,
+    "max_abs_quantile_diff_2008": 9.71445146547012e-17,
+    "max_abs_prob_diff_2020": 5.551115123125783e-16,
+    "max_abs_quantile_diff_2020": 9.71445146547012e-17
+  },
+  "regimes": {
+    "filtered_sessions": 4780,
+    "state_counts": [
+      1944,
+      1696,
+      1140
+    ],
+    "state_share": [
+      0.4067,
+      0.3548,
+      0.2385
+    ],
+    "label_switches": 167,
+    "first_date": "2007-01-03",
+    "last_date": "2025-12-31"
+  },
+  "durations": {
+    "model_id": "hsmm3-2026-d252",
+    "transition": [
+      [
+        0.0,
+        0.3052,
+        0.6948
+      ],
+      [
+        0.4848,
+        0.0,
+        0.5152
+      ],
+      [
+        0.0925,
+        0.9075,
+        0.0
+      ]
+    ],
+    "stress_p1": 0.17452938023766962,
+    "states": [
+      {
+        "state": "Low volatility",
+        "mean_excess": 55.49598373592436,
+        "dispersion": 1.5104283514297543,
+        "mean_duration": 55.62911828691831,
+        "median_duration": 45,
+        "p_exceed_63": 0.3352463328652051,
+        "daily_return_mean": 0.0009059164732897636,
+        "daily_return_std": 0.005123397539553118,
+        "training_volatility_pct": 8.490400772471872,
+        "training_vix": 13.180289855589136
+      },
+      {
+        "state": "Elevated volatility",
+        "mean_excess": 21.262749130342183,
+        "dispersion": 3.045815832448894,
+        "mean_duration": 22.262749130023533,
+        "median_duration": 20,
+        "p_exceed_63": 0.009350138150578613,
+        "daily_return_mean": 0.0009332268354918963,
+        "daily_return_std": 0.009229943377041402,
+        "training_volatility_pct": 16.076000478653263,
+        "training_vix": 18.293085748482454
+      },
+      {
+        "state": "Stress",
+        "mean_excess": 17.770698627535577,
+        "dispersion": 0.47983845185670404,
+        "mean_duration": 18.708757975629513,
+        "median_duration": 9,
+        "p_exceed_63": 0.06343852374544079,
+        "daily_return_mean": -0.0008862758568721833,
+        "daily_return_std": 0.01947143876464552,
+        "training_volatility_pct": 20.641270758695214,
+        "training_vix": 27.004082797784715
+      }
+    ]
+  },
+  "fans": [
+    {
+      "date": "2008-09-12",
+      "model_id": "hsmm3-2008-d252",
+      "state": "Stress",
+      "prob": 0.9995569875959633,
+      "expected_age": 57.45597825474154,
+      "q05_21": -0.10147889537550564,
+      "q50_21": 0.005884032425029016,
+      "q95_21": 0.12042311223715751,
+      "ewma_q05_21": -0.10720723661115573,
+      "ewma_q95_21": 0.12008076342848108,
+      "realized_21": -0.19841015041013643,
+      "realized_min": -0.2816010179919931,
+      "realized_end_date": "2008-10-13"
+    },
+    {
+      "date": "2020-02-21",
+      "model_id": "hsmm3-2020-d252",
+      "state": "Elevated volatility",
+      "prob": 0.9828559319928437,
+      "expected_age": 19.399053129976657,
+      "q05_21": -0.04702042859080561,
+      "q50_21": 0.012128564291124716,
+      "q95_21": 0.07195355244338654,
+      "ewma_q05_21": -0.05145097064473692,
+      "ewma_q95_21": 0.05424176194635777,
+      "realized_21": -0.32966821890794695,
+      "realized_min": -0.32966821890794695,
+      "realized_end_date": "2020-03-23"
+    }
+  ],
+  "evaluation_rows": 4780
+}

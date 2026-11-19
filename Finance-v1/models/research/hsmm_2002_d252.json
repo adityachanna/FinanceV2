@@ -1,0 +1,78 @@
+{
+  "model_id": "hsmm3-2002-d252",
+  "training_start": "1992-01-02",
+  "training_end": "2001-12-31",
+  "features": [
+    "log_return",
+    "log_realized_vol",
+    "log_vix"
+  ],
+  "training_data_hash": "8d98b7a72aa1c3bac17f9af5eda3eac6744725da0e1b2661cdd45a07ef6fc468",
+  "source_snapshot": "a2ec16e06c8b2f0f",
+  "python": "3.14.0",
+  "seed_likelihoods": {
+    "7": -6093.144099838036,
+    "21": -6093.144099852041,
+    "42": -6093.144009082241
+  },
+  "state_labels": [
+    "Low volatility",
+    "Elevated volatility",
+    "Stress"
+  ],
+  "state_colors": [
+    "#17745e",
+    "#a56b25",
+    "#b84e4e"
+  ],
+  "states": [
+    {
+      "id": 0,
+      "label": "Low volatility",
+      "color": "#17745e",
+      "daily_return_mean": 0.0005643841838270349,
+      "daily_return_std": 0.005524047710396555,
+      "training_volatility_pct": 8.493787818456665,
+      "training_vix": 13.432168543286268
+    },
+    {
+      "id": 1,
+      "label": "Elevated volatility",
+      "color": "#a56b25",
+      "daily_return_mean": 0.000266897602761675,
+      "daily_return_std": 0.008895607808848169,
+      "training_volatility_pct": 13.727997161512198,
+      "training_vix": 19.74788751123105
+    },
+    {
+      "id": 2,
+      "label": "Stress",
+      "color": "#b84e4e",
+      "daily_return_mean": 0.0002933252725447099,
+      "daily_return_std": 0.014680241521426808,
+      "training_volatility_pct": 21.896315388433056,
+      "training_vix": 26.413517371798516
+    }
+  ],
+  "n_states": 3,
+  "max_duration": 252,
+  "log_likelihood": -6093.144009082241,
+  "em_iterations": 4,
+  "likelihood_history": [
+    -6105.098307283752,
+    -6093.277794200385,
+    -6093.152298694508,
+    -6093.144009082241
+  ],
+  "seed": 42,
+  "duration_family": "shifted negative binomial",
+  "implementation": "explicit age-state HSMM EM",
+  "dependencies": {
+    "numpy": "2.3.4",
+    "scipy": "1.18.1",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.9.1",
+    "hmmlearn": "0.3.3",
+    "numba": "0.68.1"
+  }
+}

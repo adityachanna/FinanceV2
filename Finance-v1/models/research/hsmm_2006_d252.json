@@ -1,0 +1,80 @@
+{
+  "model_id": "hsmm3-2006-d252",
+  "training_start": "1996-01-02",
+  "training_end": "2005-12-30",
+  "features": [
+    "log_return",
+    "log_realized_vol",
+    "log_vix"
+  ],
+  "training_data_hash": "8a51a59e0429bb0878880130ae2db2f89e793e026dd3d9ff3b2b0fb401ae8cf7",
+  "source_snapshot": "a2ec16e06c8b2f0f",
+  "python": "3.14.0",
+  "seed_likelihoods": {
+    "7": -6622.144811873823,
+    "21": -6622.145731779205,
+    "42": -6622.145325744775
+  },
+  "state_labels": [
+    "Low volatility",
+    "Elevated volatility",
+    "Stress"
+  ],
+  "state_colors": [
+    "#17745e",
+    "#a56b25",
+    "#b84e4e"
+  ],
+  "states": [
+    {
+      "id": 0,
+      "label": "Low volatility",
+      "color": "#17745e",
+      "daily_return_mean": 0.0005517001498550945,
+      "daily_return_std": 0.006615425958204006,
+      "training_volatility_pct": 10.288725529439398,
+      "training_vix": 14.998527268751593
+    },
+    {
+      "id": 1,
+      "label": "Elevated volatility",
+      "color": "#a56b25",
+      "daily_return_mean": 0.00028025623926876533,
+      "daily_return_std": 0.00992886025207986,
+      "training_volatility_pct": 15.610547069846742,
+      "training_vix": 20.759267520224252
+    },
+    {
+      "id": 2,
+      "label": "Stress",
+      "color": "#b84e4e",
+      "daily_return_mean": 1.0528230945824522e-05,
+      "daily_return_std": 0.016100879435598334,
+      "training_volatility_pct": 23.79770583970327,
+      "training_vix": 28.15940870422388
+    }
+  ],
+  "n_states": 3,
+  "max_duration": 252,
+  "log_likelihood": -6622.144811873823,
+  "em_iterations": 6,
+  "likelihood_history": [
+    -6632.749970674688,
+    -6622.487434269454,
+    -6622.213211616347,
+    -6622.162397826678,
+    -6622.149593432137,
+    -6622.144811873823
+  ],
+  "seed": 7,
+  "duration_family": "shifted negative binomial",
+  "implementation": "explicit age-state HSMM EM",
+  "dependencies": {
+    "numpy": "2.3.4",
+    "scipy": "1.18.1",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.9.1",
+    "hmmlearn": "0.3.3",
+    "numba": "0.68.1"
+  }
+}

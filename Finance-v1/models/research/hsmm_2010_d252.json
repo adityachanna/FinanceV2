@@ -1,0 +1,79 @@
+{
+  "model_id": "hsmm3-2010-d252",
+  "training_start": "2000-01-03",
+  "training_end": "2009-12-31",
+  "features": [
+    "log_return",
+    "log_realized_vol",
+    "log_vix"
+  ],
+  "training_data_hash": "4d9e480b1f88b58ec661e9fa917913776f6a0d8078d37b984695bb7ca13a9c5d",
+  "source_snapshot": "a2ec16e06c8b2f0f",
+  "python": "3.14.0",
+  "seed_likelihoods": {
+    "7": -5482.230921532874,
+    "21": -5482.23107757689,
+    "42": -5482.231165460536
+  },
+  "state_labels": [
+    "Low volatility",
+    "Elevated volatility",
+    "Stress"
+  ],
+  "state_colors": [
+    "#17745e",
+    "#a56b25",
+    "#b84e4e"
+  ],
+  "states": [
+    {
+      "id": 0,
+      "label": "Low volatility",
+      "color": "#17745e",
+      "daily_return_mean": 0.0004713281139051777,
+      "daily_return_std": 0.006479571296224819,
+      "training_volatility_pct": 10.220535826097203,
+      "training_vix": 13.848315384456802
+    },
+    {
+      "id": 1,
+      "label": "Elevated volatility",
+      "color": "#a56b25",
+      "daily_return_mean": -0.0002930548486484809,
+      "daily_return_std": 0.012108503910882912,
+      "training_volatility_pct": 18.73631025359879,
+      "training_vix": 22.795651063425105
+    },
+    {
+      "id": 2,
+      "label": "Stress",
+      "color": "#b84e4e",
+      "daily_return_mean": -0.0009551491772896622,
+      "daily_return_std": 0.02553549909528533,
+      "training_volatility_pct": 34.20746525997793,
+      "training_vix": 36.65176954104415
+    }
+  ],
+  "n_states": 3,
+  "max_duration": 252,
+  "log_likelihood": -5482.230921532874,
+  "em_iterations": 5,
+  "likelihood_history": [
+    -5499.6666615692175,
+    -5482.424387035071,
+    -5482.245341387649,
+    -5482.233036066087,
+    -5482.230921532874
+  ],
+  "seed": 7,
+  "duration_family": "shifted negative binomial",
+  "implementation": "explicit age-state HSMM EM",
+  "dependencies": {
+    "numpy": "2.3.4",
+    "scipy": "1.18.1",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.9.1",
+    "hmmlearn": "0.3.3",
+    "numba": "0.68.1"
+  }
+}

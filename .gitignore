@@ -1,0 +1,33 @@
+# Secrets: never commit keys
+.env
+.env.*
+!.env.example
+
+# Dependencies and environments (the launcher recreates them)
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.nbc
+*.nbi
+
+# Build output, logs, caches
+dist/
+.vite/
+logs/
+*.log
+.local-logs/
+.pytest_cache/
+
+# Paper build intermediates
+paper/**/*.aux
+paper/**/*.bbl
+paper/**/*.blg
+paper/**/*.out
+paper/**/*.synctex.gz
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

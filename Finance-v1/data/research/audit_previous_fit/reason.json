@@ -1,0 +1,3 @@
+{
+  "reason": "2013 historical fit hit 30 iterations before convergence; rerun with a numerical budget of 200. Dates, features, seeds and duration choice unchanged. Previous evaluation retained. Revised holdout results are a corrected rerun, not a new untouched test."
+}

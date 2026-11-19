@@ -1,0 +1,4301 @@
+{
+  "run_id": "walkforward-a2ec16e06c8b2f0f-d252",
+  "configuration": {
+    "max_duration": 252,
+    "development": [
+      {
+        "max_duration": 126,
+        "development_interval_score": 0.11445318711059534
+      },
+      {
+        "max_duration": 252,
+        "development_interval_score": 0.11354169076504027
+      }
+    ],
+    "features": [
+      "log_return",
+      "log_realized_vol",
+      "log_vix"
+    ],
+    "seeds": [
+      7,
+      21,
+      42
+    ],
+    "simulations": 2000,
+    "training_window_years": 10,
+    "development_years": [
+      2000,
+      2006
+    ],
+    "test_years": [
+      2007,
+      2025
+    ],
+    "source_snapshot": "a2ec16e06c8b2f0f",
+    "frozen_at": "2026-11-02T06:29:22.167741+00:00"
+  },
+  "overall": [
+    {
+      "method": "EWMA",
+      "horizon": 1,
+      "observations": 4779,
+      "coverage": 0.8941201088093743,
+      "interval_score": 0.04783595100581098,
+      "width": 0.03470523650459841,
+      "quantile_loss": 0.0013211083609980527,
+      "breach_rate": 0.059008160703075956,
+      "brier": 0.25
+    },
+    {
+      "method": "EWMA",
+      "horizon": 5,
+      "observations": 4775,
+      "coverage": 0.9103664921465968,
+      "interval_score": 0.09847527768162703,
+      "width": 0.07767316003449413,
+      "quantile_loss": 0.0028208181297158727,
+      "breach_rate": 0.05507853403141361,
+      "brier": 0.25
+    },
+    {
+      "method": "EWMA",
+      "horizon": 21,
+      "observations": 4759,
+      "coverage": 0.918680395040975,
+      "interval_score": 0.20088384795177075,
+      "width": 0.15972096810622854,
+      "quantile_loss": 0.005962099864529687,
+      "breach_rate": 0.054633326329060726,
+      "brier": 0.25
+    },
+    {
+      "method": "Gaussian",
+      "horizon": 1,
+      "observations": 4779,
+      "coverage": 0.9146264908976773,
+      "interval_score": 0.0609503465612638,
+      "width": 0.0399624946733018,
+      "quantile_loss": 0.0015974957630294085,
+      "breach_rate": 0.049173467252563295,
+      "brier": 0.24942454137505443
+    },
+    {
+      "method": "Gaussian",
+      "horizon": 5,
+      "observations": 4775,
+      "coverage": 0.928586387434555,
+      "interval_score": 0.1206429211466063,
+      "width": 0.08946560686271343,
+      "quantile_loss": 0.003263175795335827,
+      "breach_rate": 0.04230366492146597,
+      "brier": 0.24690422772427256
+    },
+    {
+      "method": "Gaussian",
+      "horizon": 21,
+      "observations": 4759,
+      "coverage": 0.9411641101071654,
+      "interval_score": 0.23691545536679548,
+      "width": 0.18422644224066556,
+      "quantile_loss": 0.006610642343088208,
+      "breach_rate": 0.04160537928136163,
+      "brier": 0.2406665639993624
+    },
+    {
+      "method": "HMM",
+      "horizon": 1,
+      "observations": 4779,
+      "coverage": 0.8939108600125549,
+      "interval_score": 0.05178289456410858,
+      "width": 0.03456831931153584,
+      "quantile_loss": 0.0014116776503657075,
+      "breach_rate": 0.06507637581083908,
+      "brier": 0.2489341498744507
+    },
+    {
+      "method": "HMM",
+      "horizon": 5,
+      "observations": 4775,
+      "coverage": 0.9174869109947644,
+      "interval_score": 0.10552954388807301,
+      "width": 0.07774805288926065,
+      "quantile_loss": 0.0030313869866818535,
+      "breach_rate": 0.05905759162303665,
+      "brier": 0.2456095740314136
+    },
+    {
+      "method": "HMM",
+      "horizon": 21,
+      "observations": 4759,
+      "coverage": 0.9277159067030889,
+      "interval_score": 0.2108512507521586,
+      "width": 0.1625774600511077,
+      "quantile_loss": 0.006222161985571244,
+      "breach_rate": 0.060727043496532886,
+      "brier": 0.23852203766547592
+    },
+    {
+      "method": "HSMM",
+      "horizon": 1,
+      "observations": 4779,
+      "coverage": 0.8966310943712074,
+      "interval_score": 0.05187174820669136,
+      "width": 0.03473125067357422,
+      "quantile_loss": 0.0014136712409653133,
+      "breach_rate": 0.06444862942038083,
+      "brier": 0.24910328630466624
+    },
+    {
+      "method": "HSMM",
+      "horizon": 5,
+      "observations": 4775,
+      "coverage": 0.917696335078534,
+      "interval_score": 0.10565972698651739,
+      "width": 0.07822248554437534,
+      "quantile_loss": 0.003039175220633426,
+      "breach_rate": 0.05884816753926701,
+      "brier": 0.2460514090052356
+    },
+    {
+      "method": "HSMM",
+      "horizon": 21,
+      "observations": 4759,
+      "coverage": 0.9272956503467115,
+      "interval_score": 0.21163147968777551,
+      "width": 0.16386229777049469,
+      "quantile_loss": 0.006240308210679051,
+      "breach_rate": 0.06177768438747636,
+      "brier": 0.24062335044126915
+    },
+    {
+      "method": "HSMM age reset",
+      "horizon": 1,
+      "observations": 4779,
+      "coverage": 0.8957940991839297,
+      "interval_score": 0.05176971861207261,
+      "width": 0.034630355761784255,
+      "quantile_loss": 0.001411235015905277,
+      "breach_rate": 0.06507637581083908,
+      "brier": 0.24902406413475622
+    },
+    {
+      "method": "HSMM age reset",
+      "horizon": 5,
+      "observations": 4775,
+      "coverage": 0.915392670157068,
+      "interval_score": 0.10573665962011838,
+      "width": 0.07762549391048534,
+      "quantile_loss": 0.0030481940576462517,
+      "breach_rate": 0.06031413612565445,
+      "brier": 0.24587600842931934
+    },
+    {
+      "method": "HSMM age reset",
+      "horizon": 21,
+      "observations": 4759,
+      "coverage": 0.9207816768228619,
+      "interval_score": 0.2116646764317601,
+      "width": 0.16126540168639045,
+      "quantile_loss": 0.006272522966370563,
+      "breach_rate": 0.06703088884219374,
+      "brier": 0.23923362119142674
+    }
+  ],
+  "by_state": {
+    "Low volatility": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 1960,
+        "coverage": 0.8994897959183673,
+        "interval_score": 0.029585924613794376,
+        "width": 0.021197015509334637,
+        "quantile_loss": 0.0008382254343677057,
+        "breach_rate": 0.05459183673469388,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 1956,
+        "coverage": 0.8997955010224948,
+        "interval_score": 0.06643508999549122,
+        "width": 0.047395912346995236,
+        "quantile_loss": 0.0020092219755438873,
+        "breach_rate": 0.06237218813905931,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 1955,
+        "coverage": 0.89923273657289,
+        "interval_score": 0.12908793453083695,
+        "width": 0.09715964926135692,
+        "quantile_loss": 0.0038692130279487174,
+        "breach_rate": 0.06342710997442455,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 1960,
+        "coverage": 0.988265306122449,
+        "interval_score": 0.04236289501635977,
+        "width": 0.04153010593448521,
+        "quantile_loss": 0.0010724183852608953,
+        "breach_rate": 0.01020408163265306,
+        "brier": 0.24939760474457223
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 1956,
+        "coverage": 0.9872188139059305,
+        "interval_score": 0.09638677299503322,
+        "width": 0.09298709383717262,
+        "quantile_loss": 0.0024502409329954333,
+        "breach_rate": 0.012269938650306749,
+        "brier": 0.24705941543290755
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 1955,
+        "coverage": 0.991304347826087,
+        "interval_score": 0.1932987030249695,
+        "width": 0.1914208910799088,
+        "quantile_loss": 0.004716035630261422,
+        "breach_rate": 0.008695652173913044,
+        "brier": 0.2417827896550375
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 1960,
+        "coverage": 0.888265306122449,
+        "interval_score": 0.029568624808833995,
+        "width": 0.02023170309551271,
+        "quantile_loss": 0.0008331727772362013,
+        "breach_rate": 0.06887755102040816,
+        "brier": 0.2484631331632653
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 1956,
+        "coverage": 0.9038854805725971,
+        "interval_score": 0.0681196418639284,
+        "width": 0.0465322095792233,
+        "quantile_loss": 0.002030016333325992,
+        "breach_rate": 0.07822085889570553,
+        "brier": 0.24129629460633945
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 1955,
+        "coverage": 0.9125319693094629,
+        "interval_score": 0.14005849555023395,
+        "width": 0.10557996989460292,
+        "quantile_loss": 0.003977240187412167,
+        "breach_rate": 0.08593350383631713,
+        "brier": 0.23109886624040918
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 1960,
+        "coverage": 0.8887755102040816,
+        "interval_score": 0.02967982863295621,
+        "width": 0.020174944297126653,
+        "quantile_loss": 0.0008383901454663582,
+        "breach_rate": 0.06887755102040816,
+        "brier": 0.2484833920918367
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 1956,
+        "coverage": 0.9028629856850716,
+        "interval_score": 0.0684436637848879,
+        "width": 0.04672616050471021,
+        "quantile_loss": 0.002042536342409794,
+        "breach_rate": 0.07770961145194274,
+        "brier": 0.24142751035276072
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 1955,
+        "coverage": 0.9135549872122762,
+        "interval_score": 0.14008094847885233,
+        "width": 0.10808297341413148,
+        "quantile_loss": 0.0039412528672621155,
+        "breach_rate": 0.08491048593350384,
+        "brier": 0.23371764156010227
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 1960,
+        "coverage": 0.8872448979591837,
+        "interval_score": 0.02965350939624986,
+        "width": 0.019997218772279297,
+        "quantile_loss": 0.0008387006915947439,
+        "breach_rate": 0.06989795918367347,
+        "brier": 0.2485039744897959
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 1956,
+        "coverage": 0.8992842535787321,
+        "interval_score": 0.06834048353496348,
+        "width": 0.04556715545509314,
+        "quantile_loss": 0.00205326138419934,
+        "breach_rate": 0.08026584867075665,
+        "brier": 0.24162251993865028
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 1955,
+        "coverage": 0.9002557544757033,
+        "interval_score": 0.14111122781991736,
+        "width": 0.1019698433606496,
+        "quantile_loss": 0.004080931190110889,
+        "breach_rate": 0.09769820971867008,
+        "brier": 0.23282553286445012
+      }
+    ],
+    "Elevated volatility": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 1679,
+        "coverage": 0.8904109589041096,
+        "interval_score": 0.044005802843477396,
+        "width": 0.032284827170685294,
+        "quantile_loss": 0.0012677217177001845,
+        "breach_rate": 0.06372840976771887,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 1679,
+        "coverage": 0.9088743299583085,
+        "interval_score": 0.09540338598603933,
+        "width": 0.07220594252415093,
+        "quantile_loss": 0.0028134501852347545,
+        "breach_rate": 0.05658129839189994,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 1664,
+        "coverage": 0.9242788461538461,
+        "interval_score": 0.19753133263982836,
+        "width": 0.1483985923024392,
+        "quantile_loss": 0.006275457915985159,
+        "breach_rate": 0.049879807692307696,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 1679,
+        "coverage": 0.9481834425253127,
+        "interval_score": 0.04596011349921391,
+        "width": 0.040002221216229226,
+        "quantile_loss": 0.0012575499173680018,
+        "breach_rate": 0.039309112567004166,
+        "brier": 0.24923163669735335
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 1679,
+        "coverage": 0.9583085169743896,
+        "interval_score": 0.10385354770633654,
+        "width": 0.089548021019557,
+        "quantile_loss": 0.0029111605957818617,
+        "breach_rate": 0.03335318642048839,
+        "brier": 0.2472096280750336
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 1664,
+        "coverage": 0.9561298076923077,
+        "interval_score": 0.2227942503214369,
+        "width": 0.18445992450613752,
+        "quantile_loss": 0.0065227793205187585,
+        "breach_rate": 0.039663461538461536,
+        "brier": 0.24024296603340817
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 1679,
+        "coverage": 0.9029184038117928,
+        "interval_score": 0.04341558515358938,
+        "width": 0.033232076319676784,
+        "quantile_loss": 0.0012507968313706065,
+        "breach_rate": 0.061941631923764146,
+        "brier": 0.24850848168552708
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 1679,
+        "coverage": 0.9237641453245979,
+        "interval_score": 0.09665957718158674,
+        "width": 0.07558129169455031,
+        "quantile_loss": 0.002840205921454618,
+        "breach_rate": 0.05062537224538416,
+        "brier": 0.24618862016080997
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 1664,
+        "coverage": 0.9447115384615384,
+        "interval_score": 0.2076912929161417,
+        "width": 0.16350766437050063,
+        "quantile_loss": 0.0064343419017078305,
+        "breach_rate": 0.043870192307692304,
+        "brier": 0.2359260181790865
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 1679,
+        "coverage": 0.9088743299583085,
+        "interval_score": 0.043516457143787,
+        "width": 0.03359594213390355,
+        "quantile_loss": 0.0012495575581056586,
+        "breach_rate": 0.06015485407980941,
+        "brier": 0.24879259455032754
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 1679,
+        "coverage": 0.9267421083978559,
+        "interval_score": 0.0966047655936791,
+        "width": 0.07634874871404038,
+        "quantile_loss": 0.0028417225476573696,
+        "breach_rate": 0.05122096486003574,
+        "brier": 0.2471807595294818
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 1664,
+        "coverage": 0.9393028846153846,
+        "interval_score": 0.2079582301014945,
+        "width": 0.16309004174537017,
+        "quantile_loss": 0.006467388146568067,
+        "breach_rate": 0.048677884615384616,
+        "brier": 0.23787448828124996
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 1679,
+        "coverage": 0.9106611078022633,
+        "interval_score": 0.04359328591908267,
+        "width": 0.033911622086930236,
+        "quantile_loss": 0.0012501527856225378,
+        "breach_rate": 0.06015485407980941,
+        "brier": 0.24862978811792733
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 1679,
+        "coverage": 0.9261465157832043,
+        "interval_score": 0.09755446237157707,
+        "width": 0.07739326609284863,
+        "quantile_loss": 0.0028696267152631544,
+        "breach_rate": 0.051816557474687316,
+        "brier": 0.24687584737939247
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 1664,
+        "coverage": 0.9429086538461539,
+        "interval_score": 0.20965266693353646,
+        "width": 0.16591811766207762,
+        "quantile_loss": 0.006514961972370468,
+        "breach_rate": 0.046875,
+        "brier": 0.23563457932692305
+      }
+    ],
+    "Stress": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 1140,
+        "coverage": 0.8903508771929824,
+        "interval_score": 0.08485425845573256,
+        "width": 0.061494693015438,
+        "quantile_loss": 0.0022299563524827907,
+        "breach_rate": 0.05964912280701754,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 1140,
+        "coverage": 0.9307017543859649,
+        "interval_score": 0.1579737980947616,
+        "width": 0.13767469922450654,
+        "quantile_loss": 0.004224197828263418,
+        "breach_rate": 0.04035087719298246,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 1140,
+        "coverage": 0.9438596491228071,
+        "interval_score": 0.3289010376158039,
+        "width": 0.2835348380002895,
+        "quantile_loss": 0.009093824397769942,
+        "breach_rate": 0.04649122807017544,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 1140,
+        "coverage": 0.7385964912280701,
+        "interval_score": 0.11498543984125825,
+        "width": 0.0372087938509381,
+        "quantile_loss": 0.0030009350045134327,
+        "breach_rate": 0.1307017543859649,
+        "brier": 0.24975496483962045
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 1140,
+        "coverage": 0.7842105263157895,
+        "interval_score": 0.18698887184019392,
+        "width": 0.08330209643167612,
+        "quantile_loss": 0.005176451331115581,
+        "breach_rate": 0.10701754385964912,
+        "brier": 0.24618816250759015
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 1140,
+        "coverage": 0.8333333333333334,
+        "interval_score": 0.33232636415955547,
+        "width": 0.17154779138937973,
+        "quantile_loss": 0.009987975845835512,
+        "breach_rate": 0.10087719298245613,
+        "brier": 0.2393706393138387
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 1140,
+        "coverage": 0.8903508771929824,
+        "interval_score": 0.10229928159972258,
+        "width": 0.06118526647533995,
+        "quantile_loss": 0.0026432464630206263,
+        "breach_rate": 0.06315789473684211,
+        "brier": 0.25037089517543853
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 1140,
+        "coverage": 0.9315789473684211,
+        "interval_score": 0.18278080920335132,
+        "width": 0.13449908934570953,
+        "quantile_loss": 0.005031101027454305,
+        "breach_rate": 0.03859649122807018,
+        "brier": 0.25215743026315784
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 1140,
+        "coverage": 0.9289473684210526,
+        "interval_score": 0.33686704571610143,
+        "width": 0.25896538397084196,
+        "quantile_loss": 0.009762297717983277,
+        "breach_rate": 0.042105263157894736,
+        "brier": 0.2550414030701754
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 1140,
+        "coverage": 0.8921052631578947,
+        "interval_score": 0.10233200790768901,
+        "width": 0.06142997307352537,
+        "quantile_loss": 0.0026444588029822537,
+        "breach_rate": 0.06315789473684211,
+        "brier": 0.2506266583333333
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 1140,
+        "coverage": 0.9298245614035088,
+        "interval_score": 0.18285086716280052,
+        "width": 0.13502320125991696,
+        "quantile_loss": 0.005040007399345901,
+        "breach_rate": 0.037719298245614034,
+        "brier": 0.25232173026315785
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 1140,
+        "coverage": 0.9333333333333333,
+        "interval_score": 0.3396960198851583,
+        "width": 0.26064616894812387,
+        "quantile_loss": 0.00985152942389027,
+        "breach_rate": 0.0412280701754386,
+        "brier": 0.2564784096491228
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 1140,
+        "coverage": 0.8885964912280702,
+        "interval_score": 0.10183638576518024,
+        "width": 0.06084763851574006,
+        "quantile_loss": 0.0026328353144082282,
+        "breach_rate": 0.06403508771929825,
+        "brier": 0.2504989458333333
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 1140,
+        "coverage": 0.9271929824561403,
+        "interval_score": 0.18195142242964804,
+        "width": 0.13297288033553725,
+        "quantile_loss": 0.005018284300736934,
+        "breach_rate": 0.03859649122807018,
+        "brier": 0.2517015293859649
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 1140,
+        "coverage": 0.9236842105263158,
+        "interval_score": 0.33559447980123086,
+        "width": 0.2561607500576886,
+        "quantile_loss": 0.009677034735321286,
+        "breach_rate": 0.043859649122807015,
+        "brier": 0.2554762688596491
+      }
+    ]
+  },
+  "by_year": {
+    "2007": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.8764940239043825,
+        "interval_score": 0.04409305993282069,
+        "width": 0.030082097109044283,
+        "quantile_loss": 0.0012817360677620743,
+        "breach_rate": 0.0796812749003984,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 0.9163346613545816,
+        "interval_score": 0.0874883279110378,
+        "width": 0.06727960669215817,
+        "quantile_loss": 0.0026632996217115447,
+        "breach_rate": 0.06772908366533864,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.9203187250996016,
+        "interval_score": 0.1540156245779801,
+        "width": 0.13799691502578304,
+        "quantile_loss": 0.0040178188712326765,
+        "breach_rate": 0.0796812749003984,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.9282868525896414,
+        "interval_score": 0.04798188361944811,
+        "width": 0.0377989299019047,
+        "quantile_loss": 0.0012738103926090612,
+        "breach_rate": 0.04780876494023904,
+        "brier": 0.24925801133519765
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 0.9442231075697212,
+        "interval_score": 0.09192106795161557,
+        "width": 0.0846285461017087,
+        "quantile_loss": 0.00237982101664645,
+        "breach_rate": 0.05179282868525897,
+        "brier": 0.24904359673328524
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.9561752988047809,
+        "interval_score": 0.18461848593692545,
+        "width": 0.1743214852269641,
+        "quantile_loss": 0.00431280170846374,
+        "breach_rate": 0.043824701195219126,
+        "brier": 0.2485778430972596
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.8804780876494024,
+        "interval_score": 0.044315242149003085,
+        "width": 0.030675675582540876,
+        "quantile_loss": 0.0013080840984490538,
+        "breach_rate": 0.0796812749003984,
+        "brier": 0.24772053187250992
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 0.8884462151394422,
+        "interval_score": 0.09350937852216788,
+        "width": 0.06908020256563492,
+        "quantile_loss": 0.0028109248919710424,
+        "breach_rate": 0.09561752988047809,
+        "brier": 0.24845544721115537
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.9203187250996016,
+        "interval_score": 0.17568855648468448,
+        "width": 0.14434580661578364,
+        "quantile_loss": 0.004598892777045309,
+        "breach_rate": 0.0796812749003984,
+        "brier": 0.25332332171314736
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.8804780876494024,
+        "interval_score": 0.04438745919562688,
+        "width": 0.030754037323319293,
+        "quantile_loss": 0.0013091013558975914,
+        "breach_rate": 0.0796812749003984,
+        "brier": 0.24769380677290834
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 0.896414342629482,
+        "interval_score": 0.09327246397457327,
+        "width": 0.06947929813459117,
+        "quantile_loss": 0.0028110537523973684,
+        "breach_rate": 0.09561752988047809,
+        "brier": 0.24779692430278882
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.9083665338645418,
+        "interval_score": 0.1763991378643321,
+        "width": 0.14637519709889887,
+        "quantile_loss": 0.0045931564724105475,
+        "breach_rate": 0.09163346613545817,
+        "brier": 0.25233363745019916
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.8804780876494024,
+        "interval_score": 0.04422950353585711,
+        "width": 0.030930091515516008,
+        "quantile_loss": 0.0012997248946935572,
+        "breach_rate": 0.0796812749003984,
+        "brier": 0.24771614741035852
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 0.9043824701195219,
+        "interval_score": 0.09326024789822097,
+        "width": 0.06988341372824147,
+        "quantile_loss": 0.0027927747450157887,
+        "breach_rate": 0.08764940239043825,
+        "brier": 0.24863107171314738
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.9083665338645418,
+        "interval_score": 0.17523375976782513,
+        "width": 0.14742004316370963,
+        "quantile_loss": 0.004505496850933263,
+        "breach_rate": 0.09163346613545817,
+        "brier": 0.25308581075697206
+      }
+    ],
+    "2008": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 253,
+        "coverage": 0.8774703557312253,
+        "interval_score": 0.10124105795694303,
+        "width": 0.06966197915194378,
+        "quantile_loss": 0.002608668927494965,
+        "breach_rate": 0.07905138339920949,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 253,
+        "coverage": 0.924901185770751,
+        "interval_score": 0.18382249592748326,
+        "width": 0.1560693540681136,
+        "quantile_loss": 0.0046429026616028645,
+        "breach_rate": 0.06324110671936758,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 253,
+        "coverage": 0.8853754940711462,
+        "interval_score": 0.4490823159669626,
+        "width": 0.3223217177312553,
+        "quantile_loss": 0.011761349613411314,
+        "breach_rate": 0.11462450592885376,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 253,
+        "coverage": 0.6877470355731226,
+        "interval_score": 0.1651137980808777,
+        "width": 0.0373499040506688,
+        "quantile_loss": 0.004367479246914791,
+        "breach_rate": 0.17786561264822134,
+        "brier": 0.24996486739026105
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 253,
+        "coverage": 0.758893280632411,
+        "interval_score": 0.24144029438014342,
+        "width": 0.0835914224878807,
+        "quantile_loss": 0.00718369363071726,
+        "breach_rate": 0.16600790513833993,
+        "brier": 0.25103783696293475
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 253,
+        "coverage": 0.7747035573122529,
+        "interval_score": 0.4666182190968222,
+        "width": 0.1719234666239519,
+        "quantile_loss": 0.016512017448238478,
+        "breach_rate": 0.20553359683794467,
+        "brier": 0.2579373970236178
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 253,
+        "coverage": 0.758893280632411,
+        "interval_score": 0.1429486966798341,
+        "width": 0.04748546137898647,
+        "quantile_loss": 0.003756326587451626,
+        "breach_rate": 0.1422924901185771,
+        "brier": 0.24934335573122526
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 253,
+        "coverage": 0.8537549407114624,
+        "interval_score": 0.21720932202020898,
+        "width": 0.10585442775830647,
+        "quantile_loss": 0.006162187211198865,
+        "breach_rate": 0.1067193675889328,
+        "brier": 0.25005059980237154
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 253,
+        "coverage": 0.8221343873517787,
+        "interval_score": 0.4281655230810784,
+        "width": 0.21311706412066492,
+        "quantile_loss": 0.013848970232809796,
+        "breach_rate": 0.17391304347826086,
+        "brier": 0.25209193478260866
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 253,
+        "coverage": 0.7628458498023716,
+        "interval_score": 0.14278830378429533,
+        "width": 0.04756386926244654,
+        "quantile_loss": 0.003753124338950397,
+        "breach_rate": 0.1422924901185771,
+        "brier": 0.2495282035573122
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 253,
+        "coverage": 0.857707509881423,
+        "interval_score": 0.21721089263071544,
+        "width": 0.10583879654267565,
+        "quantile_loss": 0.006166579272513773,
+        "breach_rate": 0.10276679841897234,
+        "brier": 0.2504275118577075
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 253,
+        "coverage": 0.8221343873517787,
+        "interval_score": 0.4307996052978936,
+        "width": 0.2124555217258151,
+        "quantile_loss": 0.013969990901194608,
+        "breach_rate": 0.17391304347826086,
+        "brier": 0.2531514436758893
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 253,
+        "coverage": 0.7628458498023716,
+        "interval_score": 0.14244578174870567,
+        "width": 0.047747136937361205,
+        "quantile_loss": 0.0037384675219227534,
+        "breach_rate": 0.1422924901185771,
+        "brier": 0.24945372924901182
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 253,
+        "coverage": 0.8616600790513834,
+        "interval_score": 0.21715850234559664,
+        "width": 0.10700886769521618,
+        "quantile_loss": 0.006151426441787279,
+        "breach_rate": 0.10276679841897234,
+        "brier": 0.24976308399209485
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 253,
+        "coverage": 0.8221343873517787,
+        "interval_score": 0.4273310313364936,
+        "width": 0.21885683254200494,
+        "quantile_loss": 0.013627106973443373,
+        "breach_rate": 0.17391304347826086,
+        "brier": 0.253501780632411
+      }
+    ],
+    "2009": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9087301587301587,
+        "interval_score": 0.06944301948213018,
+        "width": 0.05722913864783838,
+        "quantile_loss": 0.0017982075455868773,
+        "breach_rate": 0.051587301587301584,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9444444444444444,
+        "interval_score": 0.13672913759112407,
+        "width": 0.12807431399157057,
+        "quantile_loss": 0.0034883933878995205,
+        "breach_rate": 0.01984126984126984,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9563492063492064,
+        "interval_score": 0.27577140437307796,
+        "width": 0.2633452269177269,
+        "quantile_loss": 0.007503377956719357,
+        "breach_rate": 0.01984126984126984,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.8214285714285714,
+        "interval_score": 0.08260378930819987,
+        "width": 0.0440906521140165,
+        "quantile_loss": 0.0021132149019256296,
+        "breach_rate": 0.09126984126984126,
+        "brier": 0.25041867116828836
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.8492063492063492,
+        "interval_score": 0.16416599729340395,
+        "width": 0.0985733020317507,
+        "quantile_loss": 0.004237071466723775,
+        "breach_rate": 0.06349206349206349,
+        "brier": 0.2514260890585872
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.8531746031746031,
+        "interval_score": 0.33032291818242177,
+        "width": 0.2018807408885308,
+        "quantile_loss": 0.008776466966111377,
+        "breach_rate": 0.051587301587301584,
+        "brier": 0.25890151393356525
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9365079365079365,
+        "interval_score": 0.07141726303274182,
+        "width": 0.06153846299410122,
+        "quantile_loss": 0.0018488377519339674,
+        "breach_rate": 0.03968253968253968,
+        "brier": 0.2500575644841269
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9523809523809523,
+        "interval_score": 0.1439108855812271,
+        "width": 0.1367921729267407,
+        "quantile_loss": 0.00376120073181384,
+        "breach_rate": 0.015873015873015872,
+        "brier": 0.25447664186507934
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9523809523809523,
+        "interval_score": 0.29409147771940247,
+        "width": 0.2716536557443344,
+        "quantile_loss": 0.00832722515581912,
+        "breach_rate": 0.007936507936507936,
+        "brier": 0.277906675595238
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9404761904761905,
+        "interval_score": 0.07158180266885514,
+        "width": 0.06155715805696422,
+        "quantile_loss": 0.0018521731396271414,
+        "breach_rate": 0.03968253968253968,
+        "brier": 0.25009202976190475
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9523809523809523,
+        "interval_score": 0.14322043033931448,
+        "width": 0.136651162873922,
+        "quantile_loss": 0.0037807762331433137,
+        "breach_rate": 0.015873015873015872,
+        "brier": 0.25462817857142855
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9603174603174603,
+        "interval_score": 0.29154558739981445,
+        "width": 0.26951719076155595,
+        "quantile_loss": 0.008271972609960182,
+        "breach_rate": 0.003968253968253968,
+        "brier": 0.2787837837301587
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9365079365079365,
+        "interval_score": 0.07180283209191432,
+        "width": 0.06249790137223006,
+        "quantile_loss": 0.0018560418593184108,
+        "breach_rate": 0.04365079365079365,
+        "brier": 0.2496115208333333
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9523809523809523,
+        "interval_score": 0.1484118225811569,
+        "width": 0.1392857265139505,
+        "quantile_loss": 0.0039166327045389,
+        "breach_rate": 0.015873015873015872,
+        "brier": 0.25452940277777775
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9484126984126984,
+        "interval_score": 0.2991264098174025,
+        "width": 0.2754889798268683,
+        "quantile_loss": 0.00851159664559543,
+        "breach_rate": 0.007936507936507936,
+        "brier": 0.27380545039682536
+      }
+    ],
+    "2010": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.8849206349206349,
+        "interval_score": 0.05120097655921464,
+        "width": 0.03591993735282721,
+        "quantile_loss": 0.0013889477944626478,
+        "breach_rate": 0.06349206349206349,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9285714285714286,
+        "interval_score": 0.09436922646588415,
+        "width": 0.08034198245829884,
+        "quantile_loss": 0.0026575528805959,
+        "breach_rate": 0.04365079365079365,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9166666666666666,
+        "interval_score": 0.20487044199374024,
+        "width": 0.1648371140928235,
+        "quantile_loss": 0.0065541736526343675,
+        "breach_rate": 0.07936507936507936,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9365079365079365,
+        "interval_score": 0.05562638803247569,
+        "width": 0.04607216745896,
+        "quantile_loss": 0.0014328324421536566,
+        "breach_rate": 0.03571428571428571,
+        "brier": 0.2504505149155761
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9682539682539683,
+        "interval_score": 0.10942067604113749,
+        "width": 0.1030122850817146,
+        "quantile_loss": 0.002905196577276838,
+        "breach_rate": 0.01984126984126984,
+        "brier": 0.2518005924933529
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9880952380952381,
+        "interval_score": 0.2139480920668203,
+        "width": 0.21104494212738792,
+        "quantile_loss": 0.005880647117166746,
+        "breach_rate": 0.011904761904761904,
+        "brier": 0.2553633961528129
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9087301587301587,
+        "interval_score": 0.050689099509250345,
+        "width": 0.04192558977629714,
+        "quantile_loss": 0.0014139776785258935,
+        "breach_rate": 0.05555555555555555,
+        "brier": 0.2499841468253968
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9484126984126984,
+        "interval_score": 0.10605116970141289,
+        "width": 0.09449341657254257,
+        "quantile_loss": 0.0030533813109645037,
+        "breach_rate": 0.047619047619047616,
+        "brier": 0.2505178829365079
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9404761904761905,
+        "interval_score": 0.23066016452678037,
+        "width": 0.19721747656510524,
+        "quantile_loss": 0.007225398038648654,
+        "breach_rate": 0.05952380952380952,
+        "brier": 0.2604522212301587
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9166666666666666,
+        "interval_score": 0.0506613155020296,
+        "width": 0.042146458445291676,
+        "quantile_loss": 0.0014057965950972525,
+        "breach_rate": 0.047619047619047616,
+        "brier": 0.2497918680555555
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9523809523809523,
+        "interval_score": 0.10556594255371132,
+        "width": 0.09461098343440195,
+        "quantile_loss": 0.0030351002836857184,
+        "breach_rate": 0.04365079365079365,
+        "brier": 0.24957399206349204
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9484126984126984,
+        "interval_score": 0.22720435152034058,
+        "width": 0.19610265865685148,
+        "quantile_loss": 0.007088056637627228,
+        "breach_rate": 0.047619047619047616,
+        "brier": 0.26291467857142853
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9206349206349206,
+        "interval_score": 0.05072343886433052,
+        "width": 0.042899701963882944,
+        "quantile_loss": 0.001410494201562595,
+        "breach_rate": 0.047619047619047616,
+        "brier": 0.24951566964285712
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9523809523809523,
+        "interval_score": 0.10776827560109263,
+        "width": 0.09734944173301241,
+        "quantile_loss": 0.0030811807602293927,
+        "breach_rate": 0.04365079365079365,
+        "brier": 0.24914872718253966
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9563492063492064,
+        "interval_score": 0.2329364855077057,
+        "width": 0.2036114553801885,
+        "quantile_loss": 0.007228024906019852,
+        "breach_rate": 0.04365079365079365,
+        "brier": 0.256817123015873
+      }
+    ],
+    "2011": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.8809523809523809,
+        "interval_score": 0.0586834958345141,
+        "width": 0.04225944266360699,
+        "quantile_loss": 0.0016750578742133033,
+        "breach_rate": 0.07539682539682539,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9126984126984127,
+        "interval_score": 0.1286573034807728,
+        "width": 0.09454577148994828,
+        "quantile_loss": 0.003741660859206361,
+        "breach_rate": 0.047619047619047616,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9047619047619048,
+        "interval_score": 0.2671526496361514,
+        "width": 0.19417798310487455,
+        "quantile_loss": 0.008319778322055051,
+        "breach_rate": 0.09126984126984126,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.8968253968253969,
+        "interval_score": 0.06900606948238651,
+        "width": 0.0452928699607897,
+        "quantile_loss": 0.0018070720433366965,
+        "breach_rate": 0.05952380952380952,
+        "brier": 0.25005365164748206
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.8968253968253969,
+        "interval_score": 0.1382927905649283,
+        "width": 0.1013047296989568,
+        "quantile_loss": 0.003648660151117246,
+        "breach_rate": 0.047619047619047616,
+        "brier": 0.2500512629451656
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9404761904761905,
+        "interval_score": 0.23964048016339373,
+        "width": 0.2078326056703622,
+        "quantile_loss": 0.006633837378441216,
+        "breach_rate": 0.05555555555555555,
+        "brier": 0.2505972774736727
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.8968253968253969,
+        "interval_score": 0.0603568281099106,
+        "width": 0.048363312272310374,
+        "quantile_loss": 0.0016701693301560481,
+        "breach_rate": 0.07539682539682539,
+        "brier": 0.25090228769841266
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9325396825396826,
+        "interval_score": 0.1349517033826449,
+        "width": 0.10766450494738408,
+        "quantile_loss": 0.003919256836366262,
+        "breach_rate": 0.051587301587301584,
+        "brier": 0.25606742460317455
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9007936507936508,
+        "interval_score": 0.2811037695164939,
+        "width": 0.21795994272093958,
+        "quantile_loss": 0.008622819471041496,
+        "breach_rate": 0.0992063492063492,
+        "brier": 0.26394013988095233
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9047619047619048,
+        "interval_score": 0.06012883766093789,
+        "width": 0.04837702648613454,
+        "quantile_loss": 0.001665533882008822,
+        "breach_rate": 0.07142857142857142,
+        "brier": 0.2510868700396825
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9285714285714286,
+        "interval_score": 0.13541412229612307,
+        "width": 0.1074858662915475,
+        "quantile_loss": 0.003939793916222863,
+        "breach_rate": 0.047619047619047616,
+        "brier": 0.25662915674603176
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.8968253968253969,
+        "interval_score": 0.2801058991398893,
+        "width": 0.21728715924241968,
+        "quantile_loss": 0.008573769911935994,
+        "breach_rate": 0.0992063492063492,
+        "brier": 0.26415836210317456
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9047619047619048,
+        "interval_score": 0.06014595748093031,
+        "width": 0.04878779807524839,
+        "quantile_loss": 0.0016592417173374025,
+        "breach_rate": 0.07142857142857142,
+        "brier": 0.2508889712301587
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9325396825396826,
+        "interval_score": 0.13559496303245486,
+        "width": 0.10970063345308478,
+        "quantile_loss": 0.003921773510446792,
+        "breach_rate": 0.047619047619047616,
+        "brier": 0.25629952678571427
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9087301587301587,
+        "interval_score": 0.2789657706451777,
+        "width": 0.2239560592434521,
+        "quantile_loss": 0.008383847893122144,
+        "breach_rate": 0.09126984126984126,
+        "brier": 0.2632916805555555
+      }
+    ],
+    "2012": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 250,
+        "coverage": 0.876,
+        "interval_score": 0.03817172665014907,
+        "width": 0.027611481820929647,
+        "quantile_loss": 0.0009431550528444963,
+        "breach_rate": 0.044,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 250,
+        "coverage": 0.896,
+        "interval_score": 0.07595546520003056,
+        "width": 0.06174991834045601,
+        "quantile_loss": 0.0021346076176863306,
+        "breach_rate": 0.064,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 250,
+        "coverage": 0.948,
+        "interval_score": 0.1384085732291363,
+        "width": 0.1266215689834461,
+        "quantile_loss": 0.004117442725439431,
+        "breach_rate": 0.04,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 250,
+        "coverage": 0.984,
+        "interval_score": 0.04625633799214975,
+        "width": 0.0456698077158512,
+        "quantile_loss": 0.0011687506382342164,
+        "breach_rate": 0.008,
+        "brier": 0.24994286541190314
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 250,
+        "coverage": 1.0,
+        "interval_score": 0.1021710690841628,
+        "width": 0.1021710690841628,
+        "quantile_loss": 0.002621570420253051,
+        "breach_rate": 0.0,
+        "brier": 0.2495219047176734
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 250,
+        "coverage": 1.0,
+        "interval_score": 0.2098009174944405,
+        "width": 0.2098009174944405,
+        "quantile_loss": 0.005501836649025182,
+        "breach_rate": 0.0,
+        "brier": 0.24861262412150384
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 250,
+        "coverage": 0.904,
+        "interval_score": 0.037260674314545154,
+        "width": 0.02821329635966688,
+        "quantile_loss": 0.0009128306250633741,
+        "breach_rate": 0.048,
+        "brier": 0.250839371
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 250,
+        "coverage": 0.924,
+        "interval_score": 0.07687934362743946,
+        "width": 0.06390537232377087,
+        "quantile_loss": 0.0021316343631507494,
+        "breach_rate": 0.052,
+        "brier": 0.24784010599999998
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 250,
+        "coverage": 0.956,
+        "interval_score": 0.1515004753615228,
+        "width": 0.1384324270679178,
+        "quantile_loss": 0.0042991607179725,
+        "breach_rate": 0.04,
+        "brier": 0.25042419099999996
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 250,
+        "coverage": 0.904,
+        "interval_score": 0.03726802879140734,
+        "width": 0.02818141599300233,
+        "quantile_loss": 0.0009148591061838352,
+        "breach_rate": 0.048,
+        "brier": 0.25076359
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 250,
+        "coverage": 0.92,
+        "interval_score": 0.0766517698053726,
+        "width": 0.06388986787066638,
+        "quantile_loss": 0.0021241039343411444,
+        "breach_rate": 0.052,
+        "brier": 0.24650177599999998
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 250,
+        "coverage": 0.948,
+        "interval_score": 0.1498537225548724,
+        "width": 0.1381906148459654,
+        "quantile_loss": 0.004228609896551106,
+        "breach_rate": 0.048,
+        "brier": 0.252483521
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 250,
+        "coverage": 0.904,
+        "interval_score": 0.037323358298189994,
+        "width": 0.028335384497920516,
+        "quantile_loss": 0.0009164723965379281,
+        "breach_rate": 0.048,
+        "brier": 0.25058104099999995
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 250,
+        "coverage": 0.924,
+        "interval_score": 0.07720298300720865,
+        "width": 0.06467072847932387,
+        "quantile_loss": 0.0021408579639135986,
+        "breach_rate": 0.052,
+        "brier": 0.24645964099999998
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 250,
+        "coverage": 0.956,
+        "interval_score": 0.15242463568183592,
+        "width": 0.14043327943520448,
+        "quantile_loss": 0.0043114269362524065,
+        "breach_rate": 0.04,
+        "brier": 0.24754067299999996
+      }
+    ],
+    "2013": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.8968253968253969,
+        "interval_score": 0.030733044551688068,
+        "width": 0.023328488304035423,
+        "quantile_loss": 0.0008649292028880118,
+        "breach_rate": 0.05952380952380952,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9206349206349206,
+        "interval_score": 0.058995507983213485,
+        "width": 0.05216920325562438,
+        "quantile_loss": 0.0016976850230136272,
+        "breach_rate": 0.03968253968253968,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9722222222222222,
+        "interval_score": 0.1108512761017071,
+        "width": 0.10695701015569092,
+        "quantile_loss": 0.0034893637962456195,
+        "breach_rate": 0.0,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9920634920634921,
+        "interval_score": 0.04365466927389439,
+        "width": 0.0432087692673886,
+        "quantile_loss": 0.0011271385429373203,
+        "breach_rate": 0.007936507936507936,
+        "brier": 0.24910852812180959
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 1.0,
+        "interval_score": 0.0967220154186817,
+        "width": 0.0967220154186817,
+        "quantile_loss": 0.0025417809179587706,
+        "breach_rate": 0.0,
+        "brier": 0.24613515714259604
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 1.0,
+        "interval_score": 0.1990781382464868,
+        "width": 0.1990781382464868,
+        "quantile_loss": 0.005417675542370449,
+        "breach_rate": 0.0,
+        "brier": 0.2358798590963922
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.8888888888888888,
+        "interval_score": 0.030194945026908834,
+        "width": 0.02209350489606207,
+        "quantile_loss": 0.0008503792455439137,
+        "breach_rate": 0.06349206349206349,
+        "brier": 0.24565159920634919
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9206349206349206,
+        "interval_score": 0.0584998253619035,
+        "width": 0.05035304033667777,
+        "quantile_loss": 0.001633262345003372,
+        "breach_rate": 0.05952380952380952,
+        "brier": 0.23424261805555552
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9761904761904762,
+        "interval_score": 0.1135629819971576,
+        "width": 0.11107849127147616,
+        "quantile_loss": 0.0030839868358916093,
+        "breach_rate": 0.011904761904761904,
+        "brier": 0.19233240277777774
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9047619047619048,
+        "interval_score": 0.03140841700551173,
+        "width": 0.02416021336285516,
+        "quantile_loss": 0.000876064276215299,
+        "breach_rate": 0.05555555555555555,
+        "brier": 0.24858349305555552
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9285714285714286,
+        "interval_score": 0.06046190622680294,
+        "width": 0.054930026089223934,
+        "quantile_loss": 0.0016818954247649776,
+        "breach_rate": 0.05952380952380952,
+        "brier": 0.2439358323412698
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9722222222222222,
+        "interval_score": 0.12368062587380689,
+        "width": 0.1208863642785294,
+        "quantile_loss": 0.0034877884458687372,
+        "breach_rate": 0.023809523809523808,
+        "brier": 0.2063765347222222
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9007936507936508,
+        "interval_score": 0.03152548429472023,
+        "width": 0.024020919925442107,
+        "quantile_loss": 0.0008806872833751268,
+        "breach_rate": 0.05555555555555555,
+        "brier": 0.24856895238095233
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9246031746031746,
+        "interval_score": 0.06002089093775213,
+        "width": 0.053885702304678006,
+        "quantile_loss": 0.001667624774725119,
+        "breach_rate": 0.06349206349206349,
+        "brier": 0.2445729613095238
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9682539682539683,
+        "interval_score": 0.11970579823838431,
+        "width": 0.11559947354648546,
+        "quantile_loss": 0.0033708568600168236,
+        "breach_rate": 0.027777777777777776,
+        "brier": 0.2041371597222222
+      }
+    ],
+    "2014": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9007936507936508,
+        "interval_score": 0.03207872916679242,
+        "width": 0.0223326369756428,
+        "quantile_loss": 0.0009372922534873855,
+        "breach_rate": 0.06349206349206349,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.873015873015873,
+        "interval_score": 0.07291862924336248,
+        "width": 0.049942198052770656,
+        "quantile_loss": 0.002199870993815547,
+        "breach_rate": 0.09126984126984126,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9365079365079365,
+        "interval_score": 0.12067209358930288,
+        "width": 0.10239125414377995,
+        "quantile_loss": 0.0036342135570434516,
+        "breach_rate": 0.031746031746031744,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9841269841269841,
+        "interval_score": 0.042744341360907906,
+        "width": 0.04236969928145639,
+        "quantile_loss": 0.0010714998333041681,
+        "breach_rate": 0.011904761904761904,
+        "brier": 0.24914546467281298
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9880952380952381,
+        "interval_score": 0.09605446355268236,
+        "width": 0.0948464316202496,
+        "quantile_loss": 0.0024117831075233975,
+        "breach_rate": 0.007936507936507936,
+        "brier": 0.2480866281022471
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 1.0,
+        "interval_score": 0.1952396119712364,
+        "width": 0.1952396119712364,
+        "quantile_loss": 0.004899210862355756,
+        "breach_rate": 0.0,
+        "brier": 0.24104524266483437
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9007936507936508,
+        "interval_score": 0.0323019319121618,
+        "width": 0.0228104539096425,
+        "quantile_loss": 0.0009420041760042639,
+        "breach_rate": 0.06746031746031746,
+        "brier": 0.24662299305555554
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.876984126984127,
+        "interval_score": 0.07736277071993887,
+        "width": 0.051845093666248586,
+        "quantile_loss": 0.002307609612620886,
+        "breach_rate": 0.10317460317460317,
+        "brier": 0.25156210218253966
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9484126984126984,
+        "interval_score": 0.12660850608673851,
+        "width": 0.1135406996224356,
+        "quantile_loss": 0.0032854812457549336,
+        "breach_rate": 0.04365079365079365,
+        "brier": 0.2301797380952381
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9007936507936508,
+        "interval_score": 0.03212033485014953,
+        "width": 0.02272987755011388,
+        "quantile_loss": 0.0009388192411513255,
+        "breach_rate": 0.06746031746031746,
+        "brier": 0.24641953571428568
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.8809523809523809,
+        "interval_score": 0.07683873662256582,
+        "width": 0.05173995741573526,
+        "quantile_loss": 0.002294093529050927,
+        "breach_rate": 0.0992063492063492,
+        "brier": 0.25032914980158727
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9523809523809523,
+        "interval_score": 0.1250243545362691,
+        "width": 0.11454482025027711,
+        "quantile_loss": 0.003183180860801881,
+        "breach_rate": 0.03968253968253968,
+        "brier": 0.22937340476190474
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.8928571428571429,
+        "interval_score": 0.032160623173357564,
+        "width": 0.022567215003834133,
+        "quantile_loss": 0.0009423208710067563,
+        "breach_rate": 0.07142857142857142,
+        "brier": 0.2463963125
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.8690476190476191,
+        "interval_score": 0.07694551868001323,
+        "width": 0.05066998566965012,
+        "quantile_loss": 0.0023160807600875644,
+        "breach_rate": 0.10714285714285714,
+        "brier": 0.2503135704365079
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9404761904761905,
+        "interval_score": 0.12534155410644607,
+        "width": 0.1082676930885164,
+        "quantile_loss": 0.003281722451986469,
+        "breach_rate": 0.051587301587301584,
+        "brier": 0.22991514186507936
+      }
+    ],
+    "2015": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.8849206349206349,
+        "interval_score": 0.04033281058556907,
+        "width": 0.030304856492534907,
+        "quantile_loss": 0.0011263530318611238,
+        "breach_rate": 0.07142857142857142,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9325396825396826,
+        "interval_score": 0.09368349995036063,
+        "width": 0.06777759497722259,
+        "quantile_loss": 0.002905332388640764,
+        "breach_rate": 0.05555555555555555,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.8968253968253969,
+        "interval_score": 0.1681888115400556,
+        "width": 0.13901653463316951,
+        "quantile_loss": 0.004604346626845176,
+        "breach_rate": 0.10317460317460317,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9642857142857143,
+        "interval_score": 0.047750844146938934,
+        "width": 0.0424032886908015,
+        "quantile_loss": 0.001210386569616003,
+        "breach_rate": 0.023809523809523808,
+        "brier": 0.25040461887119086
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9682539682539683,
+        "interval_score": 0.10978212931149302,
+        "width": 0.0949249493444384,
+        "quantile_loss": 0.002959561067070421,
+        "breach_rate": 0.023809523809523808,
+        "brier": 0.2488244767359778
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9801587301587301,
+        "interval_score": 0.19675512588569008,
+        "width": 0.1954286303991481,
+        "quantile_loss": 0.004286025999637569,
+        "breach_rate": 0.015873015873015872,
+        "brier": 0.25160125517593657
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.8571428571428571,
+        "interval_score": 0.04113624835056992,
+        "width": 0.03015271711101242,
+        "quantile_loss": 0.0011746872450269724,
+        "breach_rate": 0.0873015873015873,
+        "brier": 0.25421885317460313
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9007936507936508,
+        "interval_score": 0.10057133614431762,
+        "width": 0.06814342192518953,
+        "quantile_loss": 0.0030517237921840203,
+        "breach_rate": 0.07936507936507936,
+        "brier": 0.2576191468253968
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.8968253968253969,
+        "interval_score": 0.1940752309690926,
+        "width": 0.14418704016541697,
+        "quantile_loss": 0.0053333688179408355,
+        "breach_rate": 0.09523809523809523,
+        "brier": 0.28972980456349207
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.8531746031746031,
+        "interval_score": 0.04161031300544468,
+        "width": 0.03010087889121751,
+        "quantile_loss": 0.0011926331679003104,
+        "breach_rate": 0.0873015873015873,
+        "brier": 0.254143566468254
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.8968253968253969,
+        "interval_score": 0.10116083897444905,
+        "width": 0.0679753704244025,
+        "quantile_loss": 0.0030984883486805297,
+        "breach_rate": 0.07936507936507936,
+        "brier": 0.2581024821428571
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.8928571428571429,
+        "interval_score": 0.19458703233050206,
+        "width": 0.14357160252874712,
+        "quantile_loss": 0.005371624445030478,
+        "breach_rate": 0.0992063492063492,
+        "brier": 0.29244686805555553
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.8531746031746031,
+        "interval_score": 0.0416244646681284,
+        "width": 0.030038831630266622,
+        "quantile_loss": 0.001194693143683825,
+        "breach_rate": 0.0873015873015873,
+        "brier": 0.2543259871031746
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.8968253968253969,
+        "interval_score": 0.1014664181409146,
+        "width": 0.06750056901144329,
+        "quantile_loss": 0.003124408399718556,
+        "breach_rate": 0.08333333333333333,
+        "brier": 0.2578112450396825
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.8888888888888888,
+        "interval_score": 0.19852714374812938,
+        "width": 0.14086392919019558,
+        "quantile_loss": 0.005627302422739432,
+        "breach_rate": 0.10317460317460317,
+        "brier": 0.2950107996031746
+      }
+    ],
+    "2016": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9285714285714286,
+        "interval_score": 0.03465082033775037,
+        "width": 0.026691511712581564,
+        "quantile_loss": 0.0009340060208781389,
+        "breach_rate": 0.03571428571428571,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9166666666666666,
+        "interval_score": 0.07173098547033632,
+        "width": 0.0596936254026956,
+        "quantile_loss": 0.0019104016892114088,
+        "breach_rate": 0.047619047619047616,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9722222222222222,
+        "interval_score": 0.126273470454471,
+        "width": 0.12241417508917948,
+        "quantile_loss": 0.0036905581960460453,
+        "breach_rate": 0.0,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9682539682539683,
+        "interval_score": 0.04546806464206166,
+        "width": 0.0430793637271236,
+        "quantile_loss": 0.0011798758632048539,
+        "breach_rate": 0.01984126984126984,
+        "brier": 0.24975136400388193
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.996031746031746,
+        "interval_score": 0.0967637398350606,
+        "width": 0.0964337057448208,
+        "quantile_loss": 0.0024638841264379313,
+        "breach_rate": 0.003968253968253968,
+        "brier": 0.2474240389584392
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 1.0,
+        "interval_score": 0.198495940923181,
+        "width": 0.198495940923181,
+        "quantile_loss": 0.005245558431587761,
+        "breach_rate": 0.0,
+        "brier": 0.2390316645665303
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9166666666666666,
+        "interval_score": 0.03298281796157841,
+        "width": 0.024892030490598856,
+        "quantile_loss": 0.0008747346445942875,
+        "breach_rate": 0.03968253968253968,
+        "brier": 0.2501072718253968
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9325396825396826,
+        "interval_score": 0.06446190177030402,
+        "width": 0.056666255056230526,
+        "quantile_loss": 0.0016521474380467049,
+        "breach_rate": 0.03968253968253968,
+        "brier": 0.24476825198412697
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9880952380952381,
+        "interval_score": 0.1270106055977876,
+        "width": 0.1254914758182383,
+        "quantile_loss": 0.003327248354249432,
+        "breach_rate": 0.003968253968253968,
+        "brier": 0.22404581249999997
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9166666666666666,
+        "interval_score": 0.03293338094038884,
+        "width": 0.024842263398749686,
+        "quantile_loss": 0.0008749632851565765,
+        "breach_rate": 0.03968253968253968,
+        "brier": 0.25016606547619047
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9325396825396826,
+        "interval_score": 0.06397005274376842,
+        "width": 0.05662083121117258,
+        "quantile_loss": 0.0016370328852286073,
+        "breach_rate": 0.04365079365079365,
+        "brier": 0.24554424206349204
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9880952380952381,
+        "interval_score": 0.12600548321223473,
+        "width": 0.12464268679686243,
+        "quantile_loss": 0.0032891782534446067,
+        "breach_rate": 0.003968253968253968,
+        "brier": 0.2248107202380952
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9166666666666666,
+        "interval_score": 0.03309640555118811,
+        "width": 0.024834793904829688,
+        "quantile_loss": 0.0008780418825513104,
+        "breach_rate": 0.03968253968253968,
+        "brier": 0.24991950198412696
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9246031746031746,
+        "interval_score": 0.06474534098264892,
+        "width": 0.056519258101395096,
+        "quantile_loss": 0.0016604988938592731,
+        "breach_rate": 0.047619047619047616,
+        "brier": 0.24556585416666665
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9880952380952381,
+        "interval_score": 0.12551466037922787,
+        "width": 0.12418602809883375,
+        "quantile_loss": 0.0032912859101561546,
+        "breach_rate": 0.003968253968253968,
+        "brier": 0.22328841666666663
+      }
+    ],
+    "2017": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.8844621513944223,
+        "interval_score": 0.020844745140270567,
+        "width": 0.014118709906468952,
+        "quantile_loss": 0.0005486890408589705,
+        "breach_rate": 0.035856573705179286,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 0.9163346613545816,
+        "interval_score": 0.03737801026478595,
+        "width": 0.031571518937781554,
+        "quantile_loss": 0.0009956014595471616,
+        "breach_rate": 0.01593625498007968,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.8247011952191236,
+        "interval_score": 0.10944122130997695,
+        "width": 0.06471157325189215,
+        "quantile_loss": 0.0024576047469155576,
+        "breach_rate": 0.0,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 1.0,
+        "interval_score": 0.0434259810940365,
+        "width": 0.0434259810940365,
+        "quantile_loss": 0.0011005730063029084,
+        "breach_rate": 0.0,
+        "brier": 0.24922219397226097
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 1.0,
+        "interval_score": 0.0972044158079353,
+        "width": 0.0972044158079353,
+        "quantile_loss": 0.0025101272905135837,
+        "breach_rate": 0.0,
+        "brier": 0.24561033056204465
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 1.0,
+        "interval_score": 0.2000395560622192,
+        "width": 0.2000395560622192,
+        "quantile_loss": 0.00542833330499972,
+        "breach_rate": 0.0,
+        "brier": 0.23453139598566294
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.9800796812749004,
+        "interval_score": 0.022837498328561023,
+        "width": 0.02094756930562837,
+        "quantile_loss": 0.0006062072342737147,
+        "breach_rate": 0.01593625498007968,
+        "brier": 0.24630588844621515
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 1.0,
+        "interval_score": 0.048404685062034006,
+        "width": 0.048404685062034006,
+        "quantile_loss": 0.001207626215818404,
+        "breach_rate": 0.0,
+        "brier": 0.22337825697211153
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.9960159362549801,
+        "interval_score": 0.1106068131397494,
+        "width": 0.11030683764311838,
+        "quantile_loss": 0.0029426233296859974,
+        "breach_rate": 0.0,
+        "brier": 0.16994729581673307
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.9800796812749004,
+        "interval_score": 0.02332000976606589,
+        "width": 0.02148875655506045,
+        "quantile_loss": 0.0006180572621978492,
+        "breach_rate": 0.01593625498007968,
+        "brier": 0.24661208366533863
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 1.0,
+        "interval_score": 0.051478218165604495,
+        "width": 0.051478218165604495,
+        "quantile_loss": 0.001302725606553805,
+        "breach_rate": 0.0,
+        "brier": 0.2247754183266932
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.9960159362549801,
+        "interval_score": 0.12642893586998424,
+        "width": 0.12631902986402693,
+        "quantile_loss": 0.003483877694884648,
+        "breach_rate": 0.0,
+        "brier": 0.1869656464143426
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.9800796812749004,
+        "interval_score": 0.022758712243806004,
+        "width": 0.020835601322591425,
+        "quantile_loss": 0.0006038898891560274,
+        "breach_rate": 0.01593625498007968,
+        "brier": 0.24642491932270916
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 0.9960159362549801,
+        "interval_score": 0.04787567422192416,
+        "width": 0.04781835852368509,
+        "quantile_loss": 0.0011871362244215513,
+        "breach_rate": 0.0,
+        "brier": 0.22302423007968125
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.9960159362549801,
+        "interval_score": 0.10750368729125577,
+        "width": 0.10714697047548613,
+        "quantile_loss": 0.0028184135902543663,
+        "breach_rate": 0.0,
+        "brier": 0.16848670816733066
+      }
+    ],
+    "2018": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.896414342629482,
+        "interval_score": 0.04487889758889094,
+        "width": 0.02988565894559154,
+        "quantile_loss": 0.0012909426592257953,
+        "breach_rate": 0.05976095617529881,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 0.8565737051792829,
+        "interval_score": 0.10949856002138077,
+        "width": 0.06684173304578662,
+        "quantile_loss": 0.0035645402007800685,
+        "breach_rate": 0.099601593625498,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.8645418326693227,
+        "interval_score": 0.19868131462114166,
+        "width": 0.13711082893766782,
+        "quantile_loss": 0.00602504601192416,
+        "breach_rate": 0.12749003984063745,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.9362549800796812,
+        "interval_score": 0.05215740488173091,
+        "width": 0.042376955123804,
+        "quantile_loss": 0.0013754443911170844,
+        "breach_rate": 0.05179282868525897,
+        "brier": 0.24967250450751446
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 0.9362549800796812,
+        "interval_score": 0.1145552242417567,
+        "width": 0.0948763766523739,
+        "quantile_loss": 0.0030728108621783435,
+        "breach_rate": 0.055776892430278883,
+        "brier": 0.24863001902095436
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.9760956175298805,
+        "interval_score": 0.20236790709652516,
+        "width": 0.1954141194232295,
+        "quantile_loss": 0.00439817431045147,
+        "breach_rate": 0.0199203187250996,
+        "brier": 0.24804649500556838
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.8884462151394422,
+        "interval_score": 0.04277080765486706,
+        "width": 0.02938356042813183,
+        "quantile_loss": 0.0012404587777435667,
+        "breach_rate": 0.0796812749003984,
+        "brier": 0.2508249820717131
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 0.896414342629482,
+        "interval_score": 0.10911333923159444,
+        "width": 0.06656101864750678,
+        "quantile_loss": 0.003569554860149314,
+        "breach_rate": 0.09163346613545817,
+        "brier": 0.2455394621513944
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.8685258964143426,
+        "interval_score": 0.19707540275880414,
+        "width": 0.1434297574727209,
+        "quantile_loss": 0.0055985290152476145,
+        "breach_rate": 0.13147410358565736,
+        "brier": 0.2501791653386454
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.8844621513944223,
+        "interval_score": 0.04279643398325774,
+        "width": 0.02938312076626108,
+        "quantile_loss": 0.0012419858447018297,
+        "breach_rate": 0.08366533864541832,
+        "brier": 0.25037713147410356
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 0.8924302788844621,
+        "interval_score": 0.10864311722389419,
+        "width": 0.06702435650199509,
+        "quantile_loss": 0.0035436556076406255,
+        "breach_rate": 0.099601593625498,
+        "brier": 0.24485126792828685
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.8764940239043825,
+        "interval_score": 0.18735385920999106,
+        "width": 0.1446098327274602,
+        "quantile_loss": 0.005104611288626973,
+        "breach_rate": 0.12350597609561753,
+        "brier": 0.24877556175298804
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.8804780876494024,
+        "interval_score": 0.042681723117684325,
+        "width": 0.029176952738046352,
+        "quantile_loss": 0.0012404928377920477,
+        "breach_rate": 0.08764940239043825,
+        "brier": 0.2507489780876494
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 0.8884462151394422,
+        "interval_score": 0.10965345197863233,
+        "width": 0.06578212961053242,
+        "quantile_loss": 0.003630510891077673,
+        "breach_rate": 0.099601593625498,
+        "brier": 0.24556590039840637
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.8685258964143426,
+        "interval_score": 0.20343880629667976,
+        "width": 0.13944456646020778,
+        "quantile_loss": 0.005993199870619574,
+        "breach_rate": 0.13147410358565736,
+        "brier": 0.25597019521912345
+      }
+    ],
+    "2019": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9246031746031746,
+        "interval_score": 0.03550422942576432,
+        "width": 0.02786195149490498,
+        "quantile_loss": 0.0010449711718691903,
+        "breach_rate": 0.04365079365079365,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9523809523809523,
+        "interval_score": 0.0740173660105768,
+        "width": 0.062312752705874934,
+        "quantile_loss": 0.0022239060162642954,
+        "breach_rate": 0.031746031746031744,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9126984126984127,
+        "interval_score": 0.1425845870432354,
+        "width": 0.1277977434673321,
+        "quantile_loss": 0.004560197924876419,
+        "breach_rate": 0.047619047619047616,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9603174603174603,
+        "interval_score": 0.040477592445631684,
+        "width": 0.0345376370069244,
+        "quantile_loss": 0.0011024409814550987,
+        "breach_rate": 0.027777777777777776,
+        "brier": 0.2473006184098491
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9761904761904762,
+        "interval_score": 0.08273781922102161,
+        "width": 0.0773693026204814,
+        "quantile_loss": 0.002192422474323809,
+        "breach_rate": 0.011904761904761904,
+        "brier": 0.23697069745837107
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.996031746031746,
+        "interval_score": 0.16143185215446224,
+        "width": 0.1597193362130655,
+        "quantile_loss": 0.004394305339827194,
+        "breach_rate": 0.0,
+        "brier": 0.21811317974632297
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9047619047619048,
+        "interval_score": 0.03238864753873635,
+        "width": 0.02388446124097884,
+        "quantile_loss": 0.0009649225592783534,
+        "breach_rate": 0.05555555555555555,
+        "brier": 0.2458852857142857
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9325396825396826,
+        "interval_score": 0.06920918295545786,
+        "width": 0.05473198899879249,
+        "quantile_loss": 0.002064201797007145,
+        "breach_rate": 0.047619047619047616,
+        "brier": 0.22736036309523808
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9206349206349206,
+        "interval_score": 0.1445782222065051,
+        "width": 0.12215645160003251,
+        "quantile_loss": 0.004541629249430808,
+        "breach_rate": 0.07539682539682539,
+        "brier": 0.2143050376984127
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9047619047619048,
+        "interval_score": 0.03244058000731315,
+        "width": 0.023811837678657976,
+        "quantile_loss": 0.0009647542932765536,
+        "breach_rate": 0.05555555555555555,
+        "brier": 0.24620730555555553
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9444444444444444,
+        "interval_score": 0.06853460504148857,
+        "width": 0.05438157180697341,
+        "quantile_loss": 0.002061368618586624,
+        "breach_rate": 0.03968253968253968,
+        "brier": 0.22746346031746031
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9166666666666666,
+        "interval_score": 0.14219010763992757,
+        "width": 0.12085677417709952,
+        "quantile_loss": 0.0044567170591162985,
+        "breach_rate": 0.07936507936507936,
+        "brier": 0.21333836607142856
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9047619047619048,
+        "interval_score": 0.0323201527633566,
+        "width": 0.0237301814762883,
+        "quantile_loss": 0.0009588953551833291,
+        "breach_rate": 0.05555555555555555,
+        "brier": 0.24600452876984125
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9404761904761905,
+        "interval_score": 0.06871496113706041,
+        "width": 0.05386923369958001,
+        "quantile_loss": 0.002072278095249858,
+        "breach_rate": 0.04365079365079365,
+        "brier": 0.22789808928571428
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9007936507936508,
+        "interval_score": 0.14616489496137225,
+        "width": 0.11884309252363462,
+        "quantile_loss": 0.0046745811377428715,
+        "breach_rate": 0.0873015873015873,
+        "brier": 0.2146462212301587
+      }
+    ],
+    "2020": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 253,
+        "coverage": 0.9051383399209486,
+        "interval_score": 0.08730623969259879,
+        "width": 0.058813013409878816,
+        "quantile_loss": 0.002632727568221006,
+        "breach_rate": 0.06324110671936758,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 253,
+        "coverage": 0.8774703557312253,
+        "interval_score": 0.18934951213815604,
+        "width": 0.1317335603568959,
+        "quantile_loss": 0.005954769621760708,
+        "breach_rate": 0.08695652173913043,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 253,
+        "coverage": 0.8814229249011858,
+        "interval_score": 0.497814433372141,
+        "width": 0.2718163639802939,
+        "quantile_loss": 0.01817218615949175,
+        "breach_rate": 0.1067193675889328,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 253,
+        "coverage": 0.7391304347826086,
+        "interval_score": 0.12739482912281871,
+        "width": 0.0306764033455322,
+        "quantile_loss": 0.003527286293153065,
+        "breach_rate": 0.1383399209486166,
+        "brier": 0.2478246065052049
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 253,
+        "coverage": 0.758893280632411,
+        "interval_score": 0.23161005467679122,
+        "width": 0.0687213969840975,
+        "quantile_loss": 0.006847419531310687,
+        "breach_rate": 0.12648221343873517,
+        "brier": 0.24093396306679252
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 253,
+        "coverage": 0.766798418972332,
+        "interval_score": 0.5064357213272314,
+        "width": 0.1418818141880182,
+        "quantile_loss": 0.016857444246262922,
+        "breach_rate": 0.1067193675889328,
+        "brier": 0.21479725523122942
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 253,
+        "coverage": 0.8102766798418972,
+        "interval_score": 0.11321619047588603,
+        "width": 0.04007046277640674,
+        "quantile_loss": 0.00314101348616041,
+        "breach_rate": 0.11857707509881422,
+        "brier": 0.24839843478260867
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 253,
+        "coverage": 0.83399209486166,
+        "interval_score": 0.2134403878903247,
+        "width": 0.08848756164772832,
+        "quantile_loss": 0.006606243062001847,
+        "breach_rate": 0.09090909090909091,
+        "brier": 0.24801582707509878
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 253,
+        "coverage": 0.7944664031620553,
+        "interval_score": 0.497276899070487,
+        "width": 0.17424133309761786,
+        "quantile_loss": 0.017672742698130368,
+        "breach_rate": 0.1225296442687747,
+        "brier": 0.2511998132411067
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 253,
+        "coverage": 0.8142292490118577,
+        "interval_score": 0.11305582787706302,
+        "width": 0.04018609273268933,
+        "quantile_loss": 0.0031391664198278254,
+        "breach_rate": 0.11462450592885376,
+        "brier": 0.24893678952569168
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 253,
+        "coverage": 0.8221343873517787,
+        "interval_score": 0.21253429601278764,
+        "width": 0.08882164040391967,
+        "quantile_loss": 0.006575544401162736,
+        "breach_rate": 0.09486166007905138,
+        "brier": 0.24938617094861656
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 253,
+        "coverage": 0.7905138339920948,
+        "interval_score": 0.5004109088349536,
+        "width": 0.17548534915670505,
+        "quantile_loss": 0.017655023358506942,
+        "breach_rate": 0.12648221343873517,
+        "brier": 0.2547298705533596
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 253,
+        "coverage": 0.8181818181818182,
+        "interval_score": 0.11301983839080162,
+        "width": 0.04016308053754737,
+        "quantile_loss": 0.0031335392887431378,
+        "breach_rate": 0.11462450592885376,
+        "brier": 0.24893761462450592
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 253,
+        "coverage": 0.8221343873517787,
+        "interval_score": 0.21361540147648542,
+        "width": 0.0884950436149322,
+        "quantile_loss": 0.0066238189049618425,
+        "breach_rate": 0.09486166007905138,
+        "brier": 0.2486943626482213
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 253,
+        "coverage": 0.7786561264822134,
+        "interval_score": 0.5028275272743629,
+        "width": 0.17461106575957663,
+        "quantile_loss": 0.01783670370029394,
+        "breach_rate": 0.13438735177865613,
+        "brier": 0.25431846442687744
+      }
+    ],
+    "2021": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9007936507936508,
+        "interval_score": 0.03558894576677641,
+        "width": 0.026192554728721153,
+        "quantile_loss": 0.0010483018861877109,
+        "breach_rate": 0.047619047619047616,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9246031746031746,
+        "interval_score": 0.06871457575576943,
+        "width": 0.05857594632344076,
+        "quantile_loss": 0.0019351449723155835,
+        "breach_rate": 0.03968253968253968,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9404761904761905,
+        "interval_score": 0.12719659830591862,
+        "width": 0.1201073933749794,
+        "quantile_loss": 0.003919863781676049,
+        "breach_rate": 0.027777777777777776,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9603174603174603,
+        "interval_score": 0.03931470797532673,
+        "width": 0.036316502935366,
+        "quantile_loss": 0.001050376392993798,
+        "breach_rate": 0.027777777777777776,
+        "brier": 0.24800221359825209
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9841269841269841,
+        "interval_score": 0.08205950493210022,
+        "width": 0.0813653575772,
+        "quantile_loss": 0.002119776243065272,
+        "breach_rate": 0.003968253968253968,
+        "brier": 0.24148233567496888
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9841269841269841,
+        "interval_score": 0.17252233843405765,
+        "width": 0.1680606938439921,
+        "quantile_loss": 0.004595334807311232,
+        "breach_rate": 0.015873015873015872,
+        "brier": 0.21931440001991054
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9444444444444444,
+        "interval_score": 0.04182028006150917,
+        "width": 0.03699652500797601,
+        "quantile_loss": 0.0011734702592386202,
+        "breach_rate": 0.03571428571428571,
+        "brier": 0.24615786408730156
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9642857142857143,
+        "interval_score": 0.08664503877493679,
+        "width": 0.08288055765581015,
+        "quantile_loss": 0.002307126495299349,
+        "breach_rate": 0.023809523809523808,
+        "brier": 0.24339026289682536
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 1.0,
+        "interval_score": 0.17333077576673742,
+        "width": 0.17333077576673742,
+        "quantile_loss": 0.004669324036455029,
+        "breach_rate": 0.0,
+        "brier": 0.21297835317460315
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9484126984126984,
+        "interval_score": 0.041759841211580745,
+        "width": 0.03709358438762736,
+        "quantile_loss": 0.001168781136501777,
+        "breach_rate": 0.03571428571428571,
+        "brier": 0.24595053769841269
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9682539682539683,
+        "interval_score": 0.08688781560348782,
+        "width": 0.08348683956759498,
+        "quantile_loss": 0.002313656030788715,
+        "breach_rate": 0.01984126984126984,
+        "brier": 0.24375169444444442
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 1.0,
+        "interval_score": 0.17324399815993824,
+        "width": 0.17324399815993824,
+        "quantile_loss": 0.004690136625267737,
+        "breach_rate": 0.0,
+        "brier": 0.21377917559523807
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9523809523809523,
+        "interval_score": 0.041718122481380696,
+        "width": 0.037003504108791246,
+        "quantile_loss": 0.0011681594081556861,
+        "breach_rate": 0.031746031746031744,
+        "brier": 0.24601589285714284
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9642857142857143,
+        "interval_score": 0.08681795228748555,
+        "width": 0.08274440166512524,
+        "quantile_loss": 0.0023198451089748292,
+        "breach_rate": 0.023809523809523808,
+        "brier": 0.24301654365079364
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 1.0,
+        "interval_score": 0.17171243395047595,
+        "width": 0.17171243395047595,
+        "quantile_loss": 0.004626241443499198,
+        "breach_rate": 0.0,
+        "brier": 0.21329662103174601
+      }
+    ],
+    "2022": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.8725099601593626,
+        "interval_score": 0.06385424500566524,
+        "width": 0.04886407541198505,
+        "quantile_loss": 0.001678007864620668,
+        "breach_rate": 0.0796812749003984,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 0.896414342629482,
+        "interval_score": 0.13707544523362294,
+        "width": 0.10931086428231829,
+        "quantile_loss": 0.003692673427371556,
+        "breach_rate": 0.0796812749003984,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.9163346613545816,
+        "interval_score": 0.2532878885961261,
+        "width": 0.22441002758095066,
+        "quantile_loss": 0.006162274412021175,
+        "breach_rate": 0.07569721115537849,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.7370517928286853,
+        "interval_score": 0.07546860159386949,
+        "width": 0.0340417357757518,
+        "quantile_loss": 0.0019870716458826342,
+        "breach_rate": 0.1394422310756972,
+        "brier": 0.253425264220497
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 0.7529880478087649,
+        "interval_score": 0.15277242445212436,
+        "width": 0.0762956940955228,
+        "quantile_loss": 0.0044123489948931895,
+        "breach_rate": 0.16733067729083664,
+        "brier": 0.25552434428204
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.7649402390438247,
+        "interval_score": 0.27212377762414486,
+        "width": 0.1578112383052674,
+        "quantile_loss": 0.00792224876180532,
+        "breach_rate": 0.20717131474103587,
+        "brier": 0.2744818388682046
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.9362549800796812,
+        "interval_score": 0.06586184187474563,
+        "width": 0.05899256782133272,
+        "quantile_loss": 0.0016649077134693558,
+        "breach_rate": 0.05179282868525897,
+        "brier": 0.25150949103585657
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 0.9442231075697212,
+        "interval_score": 0.145347169176818,
+        "width": 0.12825353410250098,
+        "quantile_loss": 0.0038309793430879226,
+        "breach_rate": 0.04780876494023904,
+        "brier": 0.25601401693227094
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.9362549800796812,
+        "interval_score": 0.2605641824949524,
+        "width": 0.24007767589797338,
+        "quantile_loss": 0.006342303214546355,
+        "breach_rate": 0.05976095617529881,
+        "brier": 0.2647352858565737
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.9402390438247012,
+        "interval_score": 0.06605353669392258,
+        "width": 0.05961775742732315,
+        "quantile_loss": 0.001665716397365324,
+        "breach_rate": 0.055776892430278883,
+        "brier": 0.2517477221115538
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 0.9482071713147411,
+        "interval_score": 0.14620209976867554,
+        "width": 0.1296328200376336,
+        "quantile_loss": 0.003865418724744493,
+        "breach_rate": 0.05179282868525897,
+        "brier": 0.2551503705179282
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.9322709163346613,
+        "interval_score": 0.27131232396384614,
+        "width": 0.24632263830490453,
+        "quantile_loss": 0.0067654342584533116,
+        "breach_rate": 0.06772908366533864,
+        "brier": 0.26810869621513944
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 251,
+        "coverage": 0.9243027888446215,
+        "interval_score": 0.06501463196150936,
+        "width": 0.057596269180732254,
+        "quantile_loss": 0.0016566671778964167,
+        "breach_rate": 0.05976095617529881,
+        "brier": 0.2519887250996016
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 251,
+        "coverage": 0.9362549800796812,
+        "interval_score": 0.14150196321577263,
+        "width": 0.12211176058335342,
+        "quantile_loss": 0.003784460142583922,
+        "breach_rate": 0.05179282868525897,
+        "brier": 0.2551603914342629
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 251,
+        "coverage": 0.9203187250996016,
+        "interval_score": 0.2548166563871347,
+        "width": 0.22520904910174624,
+        "quantile_loss": 0.006367661625869732,
+        "breach_rate": 0.07171314741035857,
+        "brier": 0.2693825916334661
+      }
+    ],
+    "2023": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 250,
+        "coverage": 0.896,
+        "interval_score": 0.033299180032177494,
+        "width": 0.02813578658859962,
+        "quantile_loss": 0.0008836187574089662,
+        "breach_rate": 0.052,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 250,
+        "coverage": 0.88,
+        "interval_score": 0.07676497021173154,
+        "width": 0.06292295375396097,
+        "quantile_loss": 0.002061584663989713,
+        "breach_rate": 0.048,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 250,
+        "coverage": 0.952,
+        "interval_score": 0.14646307494634198,
+        "width": 0.129030942390423,
+        "quantile_loss": 0.004000372202382597,
+        "breach_rate": 0.004,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 250,
+        "coverage": 0.976,
+        "interval_score": 0.03724917466751865,
+        "width": 0.0366142623785056,
+        "quantile_loss": 0.0009441181484555036,
+        "breach_rate": 0.008,
+        "brier": 0.24884514575648797
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 250,
+        "coverage": 0.968,
+        "interval_score": 0.08510150325982563,
+        "width": 0.0820191889590681,
+        "quantile_loss": 0.0021914308873761047,
+        "breach_rate": 0.016,
+        "brier": 0.24418757238732994
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 250,
+        "coverage": 0.992,
+        "interval_score": 0.1703536946185198,
+        "width": 0.1693014762081598,
+        "quantile_loss": 0.004481733979215749,
+        "breach_rate": 0.0,
+        "brier": 0.23097480712501908
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 250,
+        "coverage": 0.896,
+        "interval_score": 0.03535253180595392,
+        "width": 0.028977903599329394,
+        "quantile_loss": 0.0009307634327195019,
+        "breach_rate": 0.052,
+        "brier": 0.248272564
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 250,
+        "coverage": 0.864,
+        "interval_score": 0.08431249413365008,
+        "width": 0.06626966462808626,
+        "quantile_loss": 0.002267296584290177,
+        "breach_rate": 0.072,
+        "brier": 0.24395452799999998
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 250,
+        "coverage": 0.928,
+        "interval_score": 0.15991735865089465,
+        "width": 0.14582782419188045,
+        "quantile_loss": 0.00452161953795793,
+        "breach_rate": 0.048,
+        "brier": 0.23608206499999998
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 250,
+        "coverage": 0.896,
+        "interval_score": 0.03519888207355295,
+        "width": 0.028710589215261602,
+        "quantile_loss": 0.00092372486504434,
+        "breach_rate": 0.052,
+        "brier": 0.24807945699999998
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 250,
+        "coverage": 0.86,
+        "interval_score": 0.08409736362084799,
+        "width": 0.06577641596894286,
+        "quantile_loss": 0.0022738169841835312,
+        "breach_rate": 0.072,
+        "brier": 0.24339301299999996
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 250,
+        "coverage": 0.932,
+        "interval_score": 0.15744580203776146,
+        "width": 0.14338563262553594,
+        "quantile_loss": 0.004428054872785158,
+        "breach_rate": 0.04,
+        "brier": 0.23446172799999998
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 250,
+        "coverage": 0.896,
+        "interval_score": 0.03497568384052414,
+        "width": 0.02831618199855658,
+        "quantile_loss": 0.000920436102514754,
+        "breach_rate": 0.052,
+        "brier": 0.24755608099999998
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 250,
+        "coverage": 0.852,
+        "interval_score": 0.08413183674021216,
+        "width": 0.06399684290837021,
+        "quantile_loss": 0.0022909189352822335,
+        "breach_rate": 0.076,
+        "brier": 0.24269265099999998
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 250,
+        "coverage": 0.908,
+        "interval_score": 0.15767884542205768,
+        "width": 0.13902103600464305,
+        "quantile_loss": 0.004489976681184272,
+        "breach_rate": 0.068,
+        "brier": 0.23304296899999996
+      }
+    ],
+    "2024": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.8928571428571429,
+        "interval_score": 0.03536053324928757,
+        "width": 0.025271653566498745,
+        "quantile_loss": 0.0010157825622356643,
+        "breach_rate": 0.05555555555555555,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9047619047619048,
+        "interval_score": 0.0728108932314031,
+        "width": 0.0565160860113988,
+        "quantile_loss": 0.002053460981829212,
+        "breach_rate": 0.047619047619047616,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9246031746031746,
+        "interval_score": 0.13073864702466234,
+        "width": 0.11588050209546295,
+        "quantile_loss": 0.004211013739454755,
+        "breach_rate": 0.023809523809523808,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.9642857142857143,
+        "interval_score": 0.04053644875632495,
+        "width": 0.0369010452334154,
+        "quantile_loss": 0.0010713224181889277,
+        "breach_rate": 0.023809523809523808,
+        "brier": 0.2483711779525515
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9722222222222222,
+        "interval_score": 0.08696075871993764,
+        "width": 0.0826564401444322,
+        "quantile_loss": 0.00228978280039263,
+        "breach_rate": 0.007936507936507936,
+        "brier": 0.24233986452905562
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 1.0,
+        "interval_score": 0.1705742071836945,
+        "width": 0.1705742071836945,
+        "quantile_loss": 0.00462627348493171,
+        "breach_rate": 0.0,
+        "brier": 0.21877626408280196
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.8571428571428571,
+        "interval_score": 0.03610308805571585,
+        "width": 0.024742723543965645,
+        "quantile_loss": 0.0010521686381773192,
+        "breach_rate": 0.07539682539682539,
+        "brier": 0.24678683333333332
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9126984126984127,
+        "interval_score": 0.07088781831115937,
+        "width": 0.05712996047359127,
+        "quantile_loss": 0.002076223679335836,
+        "breach_rate": 0.05952380952380952,
+        "brier": 0.23618741369047616
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9444444444444444,
+        "interval_score": 0.1459690872706012,
+        "width": 0.1310026631052763,
+        "quantile_loss": 0.004428022465459761,
+        "breach_rate": 0.05555555555555555,
+        "brier": 0.2159459603174603
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.8650793650793651,
+        "interval_score": 0.03593277659712894,
+        "width": 0.024648960204940763,
+        "quantile_loss": 0.0010478809461515672,
+        "breach_rate": 0.07936507936507936,
+        "brier": 0.24676090972222223
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9126984126984127,
+        "interval_score": 0.07094596095123255,
+        "width": 0.057064575586427066,
+        "quantile_loss": 0.0020545920185262192,
+        "breach_rate": 0.05952380952380952,
+        "brier": 0.23506727480158726
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9444444444444444,
+        "interval_score": 0.14397315845105949,
+        "width": 0.13044448562936992,
+        "quantile_loss": 0.004334877296925479,
+        "breach_rate": 0.05555555555555555,
+        "brier": 0.2130086994047619
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 252,
+        "coverage": 0.873015873015873,
+        "interval_score": 0.03596987605982977,
+        "width": 0.024447570963533217,
+        "quantile_loss": 0.0010531080158006933,
+        "breach_rate": 0.07936507936507936,
+        "brier": 0.24684544742063488
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 252,
+        "coverage": 0.9126984126984127,
+        "interval_score": 0.07064342775266295,
+        "width": 0.05602168231674246,
+        "quantile_loss": 0.0020799175046399203,
+        "breach_rate": 0.06349206349206349,
+        "brier": 0.23615038888888887
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 252,
+        "coverage": 0.9047619047619048,
+        "interval_score": 0.14952276792966862,
+        "width": 0.12462281061893729,
+        "quantile_loss": 0.0047132572963507775,
+        "breach_rate": 0.09126984126984126,
+        "brier": 0.2156869593253968
+      }
+    ],
+    "2025": [
+      {
+        "method": "EWMA",
+        "horizon": 1,
+        "observations": 249,
+        "coverage": 0.8995983935742972,
+        "interval_score": 0.051024516331263696,
+        "width": 0.03442538884188915,
+        "quantile_loss": 0.0013816737866505604,
+        "breach_rate": 0.060240963855421686,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 5,
+        "observations": 245,
+        "coverage": 0.9224489795918367,
+        "interval_score": 0.09997249913884773,
+        "width": 0.07744400699003937,
+        "quantile_loss": 0.003045810214847613,
+        "breach_rate": 0.05714285714285714,
+        "brier": 0.25
+      },
+      {
+        "method": "EWMA",
+        "horizon": 21,
+        "observations": 229,
+        "coverage": 0.9301310043668122,
+        "interval_score": 0.1909515697585049,
+        "width": 0.16207587342479401,
+        "quantile_loss": 0.0059561159594980284,
+        "breach_rate": 0.06550218340611354,
+        "brier": 0.25
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 1,
+        "observations": 249,
+        "coverage": 0.9437751004016064,
+        "interval_score": 0.054670879572215676,
+        "width": 0.037084344428508,
+        "quantile_loss": 0.0014096598294652265,
+        "breach_rate": 0.0321285140562249,
+        "brier": 0.24790503041640374
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 5,
+        "observations": 245,
+        "coverage": 0.926530612244898,
+        "interval_score": 0.11075280538546721,
+        "width": 0.0830806321467294,
+        "quantile_loss": 0.002956615288856278,
+        "breach_rate": 0.02857142857142857,
+        "brier": 0.24206613754515205
+      },
+      {
+        "method": "Gaussian",
+        "horizon": 21,
+        "observations": 229,
+        "coverage": 0.9082969432314411,
+        "interval_score": 0.20504182102662233,
+        "width": 0.1715619931751341,
+        "quantile_loss": 0.005178535856668882,
+        "breach_rate": 0.056768558951965066,
+        "brier": 0.22482603098125517
+      },
+      {
+        "method": "HMM",
+        "horizon": 1,
+        "observations": 249,
+        "coverage": 0.9196787148594378,
+        "interval_score": 0.04891057253278176,
+        "width": 0.03448980585541361,
+        "quantile_loss": 0.0012669848957567267,
+        "breach_rate": 0.05220883534136546,
+        "brier": 0.250187297188755
+      },
+      {
+        "method": "HMM",
+        "horizon": 5,
+        "observations": 245,
+        "coverage": 0.9551020408163265,
+        "interval_score": 0.10284982451645988,
+        "width": 0.07939186321963816,
+        "quantile_loss": 0.0031442901004913393,
+        "breach_rate": 0.036734693877551024,
+        "brier": 0.24712513163265304
+      },
+      {
+        "method": "HMM",
+        "horizon": 21,
+        "observations": 229,
+        "coverage": 0.9388646288209607,
+        "interval_score": 0.18913690082972806,
+        "width": 0.17179611418017363,
+        "quantile_loss": 0.0053458344818381465,
+        "breach_rate": 0.043668122270742356,
+        "brier": 0.22037065502183403
+      },
+      {
+        "method": "HSMM",
+        "horizon": 1,
+        "observations": 249,
+        "coverage": 0.9196787148594378,
+        "interval_score": 0.049109715833828865,
+        "width": 0.03437245967690609,
+        "quantile_loss": 0.0012777688321150887,
+        "breach_rate": 0.05220883534136546,
+        "brier": 0.2500366817269076
+      },
+      {
+        "method": "HSMM",
+        "horizon": 5,
+        "observations": 245,
+        "coverage": 0.9428571428571428,
+        "interval_score": 0.10301104462856164,
+        "width": 0.07901521844674426,
+        "quantile_loss": 0.0031452855762485387,
+        "breach_rate": 0.04081632653061224,
+        "brier": 0.24761809387755102
+      },
+      {
+        "method": "HSMM",
+        "horizon": 21,
+        "observations": 229,
+        "coverage": 0.9432314410480349,
+        "interval_score": 0.18800323739709654,
+        "width": 0.169042100831604,
+        "quantile_loss": 0.005385566923529217,
+        "breach_rate": 0.048034934497816595,
+        "brier": 0.21986262663755457
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 1,
+        "observations": 249,
+        "coverage": 0.9196787148594378,
+        "interval_score": 0.04907663236709095,
+        "width": 0.0338645160376789,
+        "quantile_loss": 0.0012732068935578055,
+        "breach_rate": 0.05220883534136546,
+        "brier": 0.24997091967871482
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 5,
+        "observations": 245,
+        "coverage": 0.9387755102040817,
+        "interval_score": 0.10197252853344571,
+        "width": 0.07716770552724384,
+        "quantile_loss": 0.003112446268628734,
+        "breach_rate": 0.04081632653061224,
+        "brier": 0.24626597244897958
+      },
+      {
+        "method": "HSMM age reset",
+        "horizon": 21,
+        "observations": 229,
+        "coverage": 0.9344978165938864,
+        "interval_score": 0.1873033778567422,
+        "width": 0.16429877199977896,
+        "quantile_loss": 0.005304660960891468,
+        "breach_rate": 0.05240174672489083,
+        "brier": 0.21815036899563317
+      }
+    ]
+  },
+  "non_overlapping": [
+    {
+      "method": "EWMA",
+      "horizon": 1,
+      "observations": 4779,
+      "coverage": 0.8941201088093743,
+      "interval_score": 0.04783595100581098,
+      "width": 0.03470523650459841,
+      "quantile_loss": 0.0013211083609980527,
+      "breach_rate": 0.059008160703075956,
+      "brier": 0.25
+    },
+    {
+      "method": "EWMA",
+      "horizon": 5,
+      "observations": 955,
+      "coverage": 0.9078534031413612,
+      "interval_score": 0.10245812012689887,
+      "width": 0.07749203666368613,
+      "quantile_loss": 0.003066699051106161,
+      "breach_rate": 0.05968586387434555,
+      "brier": 0.25
+    },
+    {
+      "method": "EWMA",
+      "horizon": 21,
+      "observations": 227,
+      "coverage": 0.9251101321585903,
+      "interval_score": 0.1872181820480428,
+      "width": 0.16005353630900565,
+      "quantile_loss": 0.005391349645789742,
+      "breach_rate": 0.05726872246696035,
+      "brier": 0.25
+    },
+    {
+      "method": "Gaussian",
+      "horizon": 1,
+      "observations": 4779,
+      "coverage": 0.9146264908976773,
+      "interval_score": 0.0609503465612638,
+      "width": 0.0399624946733018,
+      "quantile_loss": 0.0015974957630294085,
+      "breach_rate": 0.049173467252563295,
+      "brier": 0.24942454137505443
+    },
+    {
+      "method": "Gaussian",
+      "horizon": 5,
+      "observations": 955,
+      "coverage": 0.9256544502617801,
+      "interval_score": 0.12378819714062572,
+      "width": 0.08946635174979875,
+      "quantile_loss": 0.0034652659877296033,
+      "breach_rate": 0.04712041884816754,
+      "brier": 0.2466472205924228
+    },
+    {
+      "method": "Gaussian",
+      "horizon": 21,
+      "observations": 227,
+      "coverage": 0.9427312775330396,
+      "interval_score": 0.2327336618149115,
+      "width": 0.18423510562519166,
+      "quantile_loss": 0.006258375275714936,
+      "breach_rate": 0.039647577092511016,
+      "brier": 0.24066048581343086
+    },
+    {
+      "method": "HMM",
+      "horizon": 1,
+      "observations": 4779,
+      "coverage": 0.8939108600125549,
+      "interval_score": 0.05178289456410858,
+      "width": 0.03456831931153584,
+      "quantile_loss": 0.0014116776503657075,
+      "breach_rate": 0.06507637581083908,
+      "brier": 0.2489341498744507
+    },
+    {
+      "method": "HMM",
+      "horizon": 5,
+      "observations": 955,
+      "coverage": 0.9162303664921466,
+      "interval_score": 0.10849640101320941,
+      "width": 0.0775023439262703,
+      "quantile_loss": 0.003242976718153488,
+      "breach_rate": 0.06282722513089005,
+      "brier": 0.24460104057591622
+    },
+    {
+      "method": "HMM",
+      "horizon": 21,
+      "observations": 227,
+      "coverage": 0.933920704845815,
+      "interval_score": 0.19932629587471185,
+      "width": 0.16310021311759373,
+      "quantile_loss": 0.005503039852758366,
+      "breach_rate": 0.05726872246696035,
+      "brier": 0.23949957158590304
+    },
+    {
+      "method": "HSMM",
+      "horizon": 1,
+      "observations": 4779,
+      "coverage": 0.8966310943712074,
+      "interval_score": 0.05187174820669136,
+      "width": 0.03473125067357422,
+      "quantile_loss": 0.0014136712409653133,
+      "breach_rate": 0.06444862942038083,
+      "brier": 0.24910328630466624
+    },
+    {
+      "method": "HSMM",
+      "horizon": 5,
+      "observations": 955,
+      "coverage": 0.9141361256544502,
+      "interval_score": 0.10859922589122367,
+      "width": 0.07812880453224327,
+      "quantile_loss": 0.0032470277677721076,
+      "breach_rate": 0.06387434554973823,
+      "brier": 0.2453763018324607
+    },
+    {
+      "method": "HSMM",
+      "horizon": 21,
+      "observations": 227,
+      "coverage": 0.933920704845815,
+      "interval_score": 0.19897152254050526,
+      "width": 0.1644949518319647,
+      "quantile_loss": 0.005471743676747553,
+      "breach_rate": 0.05286343612334802,
+      "brier": 0.24024411233480175
+    },
+    {
+      "method": "HSMM age reset",
+      "horizon": 1,
+      "observations": 4779,
+      "coverage": 0.8957940991839297,
+      "interval_score": 0.05176971861207261,
+      "width": 0.034630355761784255,
+      "quantile_loss": 0.001411235015905277,
+      "breach_rate": 0.06507637581083908,
+      "brier": 0.24902406413475622
+    },
+    {
+      "method": "HSMM age reset",
+      "horizon": 5,
+      "observations": 955,
+      "coverage": 0.912041884816754,
+      "interval_score": 0.10867216616797319,
+      "width": 0.07743820619188885,
+      "quantile_loss": 0.003249603216059857,
+      "breach_rate": 0.06492146596858639,
+      "brier": 0.2451025303664921
+    },
+    {
+      "method": "HSMM age reset",
+      "horizon": 21,
+      "observations": 227,
+      "coverage": 0.920704845814978,
+      "interval_score": 0.19895336282214313,
+      "width": 0.16136031341564175,
+      "quantile_loss": 0.005571683176508959,
+      "breach_rate": 0.06607929515418502,
+      "brier": 0.24058853854625548
+    }
+  ],
+  "data_verification": {
+    "source": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
+    "matched_observations": 9272,
+    "max_absolute_difference": 2.610000839233397,
+    "within_0_05_fraction": 0.9990293356341674,
+    "differences_over_0_05": {
+      "2008-11-28": 0.5600012207031284,
+      "2009-11-27": 0.11000022888183736,
+      "2014-08-29": 0.1100001525878902,
+      "2014-10-15": 0.9799995422363281,
+      "2014-12-01": 0.13000015258788977,
+      "2014-12-05": 0.07000034332275362,
+      "2014-12-09": 0.460000381469726,
+      "2021-08-11": 0.11000007629394659,
+      "2026-02-06": 2.610000839233397
+    },
+    "examples": {
+      "2008-11-20": {
+        "yahoo": 80.86000061035156,
+        "cboe": 80.86
+      },
+      "2020-03-16": {
+        "yahoo": 82.69000244140625,
+        "cboe": 82.69
+      },
+      "2022-03-07": {
+        "yahoo": 36.45000076293945,
+        "cboe": 36.45
+      }
+    },
+    "spx_fred": {
+      "source": "https://fred.stlouisfed.org/series/SP500",
+      "observations": 2512,
+      "max_absolute_difference": 5.289843749999818,
+      "within_0_1_fraction": 0.9988057324840764
+    }
+  },
+  "limitations": [
+    "Gaussian emissions can underestimate extreme tails.",
+    "Market state probabilities are not classification accuracy.",
+    "Overlapping horizons have dependent forecast errors.",
+    "Revised vendor history is not a vintage point-in-time dataset."
+  ],
+  "paired_interval_score": [
+    {
+      "horizon": 1,
+      "baseline": "HMM",
+      "hsmm_minus_baseline": 8.885364258277437e-05,
+      "block_bootstrap_95": [
+        -2.4417032238964807e-05,
+        0.00020433584016530589
+      ]
+    },
+    {
+      "horizon": 1,
+      "baseline": "EWMA",
+      "hsmm_minus_baseline": 0.004035797200880386,
+      "block_bootstrap_95": [
+        0.0003009303288604723,
+        0.009946446419628888
+      ]
+    },
+    {
+      "horizon": 1,
+      "baseline": "Gaussian",
+      "hsmm_minus_baseline": -0.009078598354572441,
+      "block_bootstrap_95": [
+        -0.011689724594914642,
+        -0.006246604614882684
+      ]
+    },
+    {
+      "horizon": 1,
+      "baseline": "HSMM age reset",
+      "hsmm_minus_baseline": 0.00010202959461875373,
+      "block_bootstrap_95": [
+        1.3037756723148755e-05,
+        0.00019072351438690198
+      ]
+    },
+    {
+      "horizon": 5,
+      "baseline": "HMM",
+      "hsmm_minus_baseline": 0.00013018309844438993,
+      "block_bootstrap_95": [
+        -0.0002263488734512423,
+        0.0005270403547030484
+      ]
+    },
+    {
+      "horizon": 5,
+      "baseline": "EWMA",
+      "hsmm_minus_baseline": 0.007184449304890361,
+      "block_bootstrap_95": [
+        0.0027296677695095297,
+        0.012649628916814336
+      ]
+    },
+    {
+      "horizon": 5,
+      "baseline": "Gaussian",
+      "hsmm_minus_baseline": -0.0149831941600889,
+      "block_bootstrap_95": [
+        -0.021258513524257484,
+        -0.00835199034116929
+      ]
+    },
+    {
+      "horizon": 5,
+      "baseline": "HSMM age reset",
+      "hsmm_minus_baseline": -7.693263360098502e-05,
+      "block_bootstrap_95": [
+        -0.0006290770101679458,
+        0.0005029490665717961
+      ]
+    },
+    {
+      "horizon": 21,
+      "baseline": "HMM",
+      "hsmm_minus_baseline": 0.0007802289356169115,
+      "block_bootstrap_95": [
+        -0.0006855200569030709,
+        0.002438832294639206
+      ]
+    },
+    {
+      "horizon": 21,
+      "baseline": "EWMA",
+      "hsmm_minus_baseline": 0.010747631736004735,
+      "block_bootstrap_95": [
+        -0.0009127037981177009,
+        0.02182429523956441
+      ]
+    },
+    {
+      "horizon": 21,
+      "baseline": "Gaussian",
+      "hsmm_minus_baseline": -0.025283975679019962,
+      "block_bootstrap_95": [
+        -0.03862838605665059,
+        -0.010480978870471397
+      ]
+    },
+    {
+      "horizon": 21,
+      "baseline": "HSMM age reset",
+      "hsmm_minus_baseline": -3.31967439845982e-05,
+      "block_bootstrap_95": [
+        -0.002358664021160573,
+        0.002188595665306845
+      ]
+    }
+  ],
+  "evaluation_prices_sha256": "1497e14e8ea25191a2e6c734948b0b11edf808ced058207638e1f4681bdafe71",
+  "fit_diagnostics": [
+    {
+      "model_id": "hsmm3-2007-d252",
+      "iterations": 5,
+      "iteration_budget_reached": false
+    },
+    {
+      "model_id": "hsmm3-2008-d252",
+      "iterations": 6,
+      "iteration_budget_reached": false
+    },
+    {
+      "model_id": "hsmm3-2009-d252",
+      "iterations": 17,
+      "iteration_budget_reached": false
+    },
+    {
+      "model_id": "hsmm3-2010-d252",
+      "iterations": 5,
+      "iteration_budget_reached": false
+    },
+    {
+      "model_id": "hsmm3-2011-d252",
+      "iterations": 5,
+      "iteration_budget_reached": false
+    },
+    {
+      "model_id": "hsmm3-2012-d252",
+      "iterations": 6,
+      "iteration_budget_reached": false
+    },
+    {
+      "model_id": "hsmm3-2013-d252",
+      "iterations": 30,
+      "iteration_budget_reached": true
+    },
+    {
+      "model_id": "hsmm3-2014-d252",
+      "iterations": 6,
+      "iteration_budget_reached": false
+    },
+    {
+      "model_id": "hsmm3-2015-d252",
+      "iterations": 6,
+      "iteration_budget_reached": false
+    },
+    {
+      "model_id": "hsmm3-2016-d252",
+      "iterations": 6,
+      "iteration_budget_reached": false
+    },
+    {
+      "model_id": "hsmm3-2017-d252",
+      "iterations": 6,
+      "iteration_budget_reached": false
+    },
+    {
+      "model_id": "hsmm3-2018-d252",
+      "iterations": 8,
+      "iteration_budget_reached": false
+    },
+    {
+      "model_id": "hsmm3-2019-d252",
+      "iterations": 11,
+      "iteration_budget_reached": false
+    },
+    {
+      "model_id": "hsmm3-2020-d252",
+      "iterations": 12,
+      "iteration_budget_reached": false
+    },
+    {
+      "model_id": "hsmm3-2021-d252",
+      "iterations": 5,
+      "iteration_budget_reached": false
+    },
+    {
+      "model_id": "hsmm3-2022-d252",
+      "iterations": 13,
+      "iteration_budget_reached": false
+    },
+    {
+      "model_id": "hsmm3-2023-d252",
+      "iterations": 10,
+      "iteration_budget_reached": false
+    },
+    {
+      "model_id": "hsmm3-2024-d252",
+      "iterations": 13,
+      "iteration_budget_reached": false
+    },
+    {
+      "model_id": "hsmm3-2025-d252",
+      "iterations": 7,
+      "iteration_budget_reached": false
+    }
+  ]
+}

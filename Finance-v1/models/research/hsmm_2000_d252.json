@@ -1,0 +1,78 @@
+{
+  "model_id": "hsmm3-2000-d252",
+  "training_start": "1990-01-31",
+  "training_end": "1999-12-30",
+  "features": [
+    "log_return",
+    "log_realized_vol",
+    "log_vix"
+  ],
+  "training_data_hash": "2c42bf3ebc7cfd69401dd1b720c11143ed0fb5f49a0643f6a71d62c698b9a69c",
+  "source_snapshot": "a2ec16e06c8b2f0f",
+  "python": "3.14.0",
+  "seed_likelihoods": {
+    "7": -6544.847075756103,
+    "21": -6544.847075739529,
+    "42": -6544.847075856721
+  },
+  "state_labels": [
+    "Low volatility",
+    "Elevated volatility",
+    "Stress"
+  ],
+  "state_colors": [
+    "#17745e",
+    "#a56b25",
+    "#b84e4e"
+  ],
+  "states": [
+    {
+      "id": 0,
+      "label": "Low volatility",
+      "color": "#17745e",
+      "daily_return_mean": 0.0005571151278659101,
+      "daily_return_std": 0.005513806073848424,
+      "training_volatility_pct": 8.48402722356446,
+      "training_vix": 13.53466189203465
+    },
+    {
+      "id": 1,
+      "label": "Elevated volatility",
+      "color": "#a56b25",
+      "daily_return_mean": 0.00047092396490224214,
+      "daily_return_std": 0.008509118447259404,
+      "training_volatility_pct": 13.222868916146618,
+      "training_vix": 19.1676140356655
+    },
+    {
+      "id": 2,
+      "label": "Stress",
+      "color": "#b84e4e",
+      "daily_return_mean": 0.0008901952066858485,
+      "daily_return_std": 0.013548224784986242,
+      "training_volatility_pct": 20.265526301479937,
+      "training_vix": 26.080023057349734
+    }
+  ],
+  "n_states": 3,
+  "max_duration": 252,
+  "log_likelihood": -6544.847075739529,
+  "em_iterations": 4,
+  "likelihood_history": [
+    -6553.776969664306,
+    -6544.985943979411,
+    -6544.854602304666,
+    -6544.847075739529
+  ],
+  "seed": 21,
+  "duration_family": "shifted negative binomial",
+  "implementation": "explicit age-state HSMM EM",
+  "dependencies": {
+    "numpy": "2.3.4",
+    "scipy": "1.18.1",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.9.1",
+    "hmmlearn": "0.3.3",
+    "numba": "0.68.1"
+  }
+}

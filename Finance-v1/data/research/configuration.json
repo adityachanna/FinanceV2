@@ -1,0 +1,35 @@
+{
+  "max_duration": 252,
+  "development": [
+    {
+      "max_duration": 126,
+      "development_interval_score": 0.11445318711059534
+    },
+    {
+      "max_duration": 252,
+      "development_interval_score": 0.11354169076504027
+    }
+  ],
+  "features": [
+    "log_return",
+    "log_realized_vol",
+    "log_vix"
+  ],
+  "seeds": [
+    7,
+    21,
+    42
+  ],
+  "simulations": 2000,
+  "training_window_years": 10,
+  "development_years": [
+    2000,
+    2006
+  ],
+  "test_years": [
+    2007,
+    2025
+  ],
+  "source_snapshot": "a2ec16e06c8b2f0f",
+  "frozen_at": "2026-11-02T06:29:22.167741+00:00"
+}

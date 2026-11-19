@@ -1,0 +1,104 @@
+{
+  "model_id": "hsmm3-2013-d252",
+  "training_start": "2003-01-02",
+  "training_end": "2012-12-31",
+  "features": [
+    "log_return",
+    "log_realized_vol",
+    "log_vix"
+  ],
+  "training_data_hash": "b1e7becb4e1dbfd056bb6236befbd52ca44732ff87eaef3553dfb51722e2c0ee",
+  "source_snapshot": "a2ec16e06c8b2f0f",
+  "python": "3.14.0",
+  "seed_likelihoods": {
+    "7": -5589.833662070843,
+    "21": -5589.833656854617,
+    "42": -5589.833758464658
+  },
+  "state_labels": [
+    "Low volatility",
+    "Elevated volatility",
+    "Stress"
+  ],
+  "state_colors": [
+    "#17745e",
+    "#a56b25",
+    "#b84e4e"
+  ],
+  "states": [
+    {
+      "id": 0,
+      "label": "Low volatility",
+      "color": "#17745e",
+      "daily_return_mean": 0.0006233525158292077,
+      "daily_return_std": 0.006082768847593207,
+      "training_volatility_pct": 9.401521437536498,
+      "training_vix": 14.087760782561572
+    },
+    {
+      "id": 1,
+      "label": "Elevated volatility",
+      "color": "#a56b25",
+      "daily_return_mean": 0.00023381068602506682,
+      "daily_return_std": 0.010250283468589649,
+      "training_volatility_pct": 16.16434159821008,
+      "training_vix": 19.885525686013047
+    },
+    {
+      "id": 2,
+      "label": "Stress",
+      "color": "#b84e4e",
+      "daily_return_mean": -0.0007715351907452789,
+      "daily_return_std": 0.024059914978974306,
+      "training_volatility_pct": 32.128827737642226,
+      "training_vix": 34.484583632469835
+    }
+  ],
+  "n_states": 3,
+  "max_duration": 252,
+  "log_likelihood": -5589.833656854617,
+  "em_iterations": 30,
+  "likelihood_history": [
+    -5654.6822896304475,
+    -5645.391739031704,
+    -5645.064073518563,
+    -5644.997672460613,
+    -5644.959482180399,
+    -5644.926145547527,
+    -5644.892913386942,
+    -5644.858032187588,
+    -5644.820187767641,
+    -5644.777811728338,
+    -5644.728688467324,
+    -5644.669544769281,
+    -5644.595436767882,
+    -5644.498957472706,
+    -5644.369392180812,
+    -5644.192200085324,
+    -5643.948238605834,
+    -5643.606217596418,
+    -5643.0935977448335,
+    -5642.279837085838,
+    -5641.171112101499,
+    -5640.135373937023,
+    -5639.337268119672,
+    -5638.281984734577,
+    -5635.284001959659,
+    -5626.530354840185,
+    -5616.706265442426,
+    -5609.191510915366,
+    -5603.989062131463,
+    -5597.57264929357
+  ],
+  "seed": 21,
+  "duration_family": "shifted negative binomial",
+  "implementation": "explicit age-state HSMM EM",
+  "dependencies": {
+    "numpy": "2.3.4",
+    "scipy": "1.18.1",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.9.1",
+    "hmmlearn": "0.3.3",
+    "numba": "0.68.1"
+  }
+}

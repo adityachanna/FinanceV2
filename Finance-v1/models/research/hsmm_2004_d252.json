@@ -1,0 +1,83 @@
+{
+  "model_id": "hsmm3-2004-d252",
+  "training_start": "1994-01-03",
+  "training_end": "2003-12-31",
+  "features": [
+    "log_return",
+    "log_realized_vol",
+    "log_vix"
+  ],
+  "training_data_hash": "2be30e65001daaf09ea23721714e7c87b524dc582e795bdd390c80f18baa2e72",
+  "source_snapshot": "a2ec16e06c8b2f0f",
+  "python": "3.14.0",
+  "seed_likelihoods": {
+    "7": -6255.887151716248,
+    "21": -6255.88713834545,
+    "42": -6255.8815396883165
+  },
+  "state_labels": [
+    "Low volatility",
+    "Elevated volatility",
+    "Stress"
+  ],
+  "state_colors": [
+    "#17745e",
+    "#a56b25",
+    "#b84e4e"
+  ],
+  "states": [
+    {
+      "id": 0,
+      "label": "Low volatility",
+      "color": "#17745e",
+      "daily_return_mean": 0.0007481665904090709,
+      "daily_return_std": 0.005730271766493256,
+      "training_volatility_pct": 8.826986882444448,
+      "training_vix": 13.871845640464194
+    },
+    {
+      "id": 1,
+      "label": "Elevated volatility",
+      "color": "#a56b25",
+      "daily_return_mean": 0.00035606570816805477,
+      "daily_return_std": 0.009412702537444508,
+      "training_volatility_pct": 14.648452620334066,
+      "training_vix": 20.287028150396335
+    },
+    {
+      "id": 2,
+      "label": "Stress",
+      "color": "#b84e4e",
+      "daily_return_mean": 2.0779578003773816e-05,
+      "daily_return_std": 0.015619974979575646,
+      "training_volatility_pct": 22.981409980407022,
+      "training_vix": 27.493711807009344
+    }
+  ],
+  "n_states": 3,
+  "max_duration": 252,
+  "log_likelihood": -6255.8815396883165,
+  "em_iterations": 9,
+  "likelihood_history": [
+    -6265.852435204478,
+    -6257.856241429055,
+    -6257.168633418988,
+    -6256.350802671586,
+    -6255.9608126654,
+    -6255.91590398734,
+    -6255.898334458973,
+    -6255.88789768075,
+    -6255.8815396883165
+  ],
+  "seed": 42,
+  "duration_family": "shifted negative binomial",
+  "implementation": "explicit age-state HSMM EM",
+  "dependencies": {
+    "numpy": "2.3.4",
+    "scipy": "1.18.1",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.9.1",
+    "hmmlearn": "0.3.3",
+    "numba": "0.68.1"
+  }
+}

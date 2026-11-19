@@ -1,0 +1,51 @@
+{
+  "snapshot_id": "3975082def45c684",
+  "retrieved_at": "2026-11-19T15:20:06.522588+00:00",
+  "first_date": "1990-01-02",
+  "last_date": "2026-11-18",
+  "observations": 9285,
+  "source": "Yahoo Finance S&P 500 and Cboe VIX daily close",
+  "return_convention": "S&P 500 price index, excludes dividends",
+  "features": [
+    "log_return",
+    "log_realized_vol",
+    "log_vix"
+  ],
+  "verification": {
+    "source": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
+    "matched_observations": 9285,
+    "max_absolute_difference": 2.610000839233397,
+    "within_0_05_fraction": 0.9990306946688207,
+    "differences_over_0_05": {
+      "2008-11-28": 0.5600012207031284,
+      "2009-11-27": 0.11000022888183736,
+      "2014-08-29": 0.1100001525878902,
+      "2014-10-15": 0.9799995422363281,
+      "2014-12-01": 0.13000015258788977,
+      "2014-12-05": 0.07000034332275362,
+      "2014-12-09": 0.460000381469726,
+      "2021-08-11": 0.11000007629394659,
+      "2026-02-06": 2.610000839233397
+    },
+    "examples": {
+      "2008-11-20": {
+        "yahoo": 80.86000061035156,
+        "cboe": 80.86
+      },
+      "2020-03-16": {
+        "yahoo": 82.69000244140625,
+        "cboe": 82.69
+      },
+      "2022-03-07": {
+        "yahoo": 36.45000076293945,
+        "cboe": 36.45
+      }
+    },
+    "spx_fred": {
+      "source": "https://fred.stlouisfed.org/series/SP500",
+      "observations": 2512,
+      "max_absolute_difference": 5.289843749999818,
+      "within_0_1_fraction": 0.9988057324840764
+    }
+  }
+}

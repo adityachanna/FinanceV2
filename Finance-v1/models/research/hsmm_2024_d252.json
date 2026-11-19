@@ -1,0 +1,87 @@
+{
+  "model_id": "hsmm3-2024-d252",
+  "training_start": "2014-01-02",
+  "training_end": "2023-12-29",
+  "features": [
+    "log_return",
+    "log_realized_vol",
+    "log_vix"
+  ],
+  "training_data_hash": "4d43b54fcf2828e857bb847cf3eb4f1cdcdfb627d1fd21a6a372ed210911cf43",
+  "source_snapshot": "a2ec16e06c8b2f0f",
+  "python": "3.14.0",
+  "seed_likelihoods": {
+    "7": -6462.1925562753695,
+    "21": -6462.192556248045,
+    "42": -6462.192334043635
+  },
+  "state_labels": [
+    "Low volatility",
+    "Elevated volatility",
+    "Stress"
+  ],
+  "state_colors": [
+    "#17745e",
+    "#a56b25",
+    "#b84e4e"
+  ],
+  "states": [
+    {
+      "id": 0,
+      "label": "Low volatility",
+      "color": "#17745e",
+      "daily_return_mean": 0.0009084245064507163,
+      "daily_return_std": 0.005013842798232136,
+      "training_volatility_pct": 8.81621408997453,
+      "training_vix": 12.788020712437694
+    },
+    {
+      "id": 1,
+      "label": "Elevated volatility",
+      "color": "#a56b25",
+      "daily_return_mean": 0.00028478877050139734,
+      "daily_return_std": 0.009589233962799643,
+      "training_volatility_pct": 14.581849872966005,
+      "training_vix": 18.350025295538256
+    },
+    {
+      "id": 2,
+      "label": "Stress",
+      "color": "#b84e4e",
+      "daily_return_mean": -0.0006128272521879817,
+      "daily_return_std": 0.01982657928017444,
+      "training_volatility_pct": 22.3842742358458,
+      "training_vix": 27.924833275358747
+    }
+  ],
+  "n_states": 3,
+  "max_duration": 252,
+  "log_likelihood": -6462.192334043635,
+  "em_iterations": 13,
+  "likelihood_history": [
+    -6477.40623549908,
+    -6463.7470323402995,
+    -6462.992028719525,
+    -6462.723439505013,
+    -6462.558217133365,
+    -6462.442134872031,
+    -6462.35906310911,
+    -6462.300293446394,
+    -6462.259482517906,
+    -6462.231650048026,
+    -6462.212949493083,
+    -6462.200524820816,
+    -6462.192334043635
+  ],
+  "seed": 42,
+  "duration_family": "shifted negative binomial",
+  "implementation": "explicit age-state HSMM EM",
+  "dependencies": {
+    "numpy": "2.3.4",
+    "scipy": "1.18.1",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.9.1",
+    "hmmlearn": "0.3.3",
+    "numba": "0.68.1"
+  }
+}
