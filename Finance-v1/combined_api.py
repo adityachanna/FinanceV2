@@ -1,4 +1,6 @@
 import os
+import re
+import time
 import logging
 from typing import Optional, Dict, Any, List
 from fastapi import FastAPI, HTTPException, Query
@@ -314,28 +316,57 @@ def search_ticker(q: str = Query(..., min_length=1)):
     Search for a ticker symbol by name or keyword.
     Returns a list of matching symbols with metadata.
     """
+    key = q.strip().lower()
+    cached = _search_cache.get(key)
+    if cached and time.time() - cached[0] < 3600:
+        return cached[1]
+    quotes, last_error = None, None
+    # 1) yfinance handles Yahoo's cookies; 2) direct request, retried once with a short timeout.
     try:
-        url = "https://query2.finance.yahoo.com/v1/finance/search"
-        params = {"q": q, "quotesCount": 10, "newsCount": 0}
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-        }
-        resp = requests.get(url, params=params, headers=headers, timeout=20)
-        data = resp.json()
-        
-        results = []
-        if "quotes" in data:
-            for quote in data["quotes"]:
-                 results.append({
-                     "symbol": quote.get("symbol"),
-                     "name": quote.get("shortname") or quote.get("longname"),
-                     "exch": quote.get("exchange"),
-                     "type": quote.get("quoteType")
-                 })
-        return {"count": len(results), "results": results}
-    except Exception as e:
-        logger.error(f"Error in search: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        import yfinance as yf
+        quotes = yf.Search(q, max_results=10, news_count=0, timeout=8).quotes
+    except Exception as error:
+        last_error = error
+    for _ in range(2):
+        if quotes:
+            break
+        try:
+            resp = requests.get("https://query2.finance.yahoo.com/v1/finance/search",
+                                params={"q": q, "quotesCount": 10, "newsCount": 0},
+                                headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                                                       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"},
+                                timeout=8)
+            quotes = resp.json().get("quotes", [])
+        except Exception as error:
+            last_error = error
+    if quotes:
+        results = [{"symbol": quote.get("symbol"), "name": quote.get("shortname") or quote.get("longname"),
+                    "exch": quote.get("exchange"), "type": quote.get("quoteType")}
+                   for quote in quotes if quote.get("symbol")]
+        value = {"count": len(results), "results": results}
+        _search_cache[key] = (time.time(), value)
+        return value
+    # 3) Yahoo unavailable: match well-known companies and tickers locally so search still works.
+    logger.warning(f"Yahoo search unavailable for {q!r}, using local list: {last_error}")
+    results = local_search(q)
+    return {"count": len(results), "results": results, "offline": True}
+
+
+_search_cache: Dict[str, Any] = {}
+
+
+def local_search(q: str) -> List[Dict[str, Any]]:
+    text = q.strip().lower()
+    names = {}
+    for name, symbol in fallback.COMPANY_NAMES.items():
+        names.setdefault(symbol, name)
+    matches = []
+    for symbol, name in names.items():
+        if text == symbol.lower() or symbol.lower().startswith(text) or text in name:
+            matches.append({"symbol": symbol, "name": name.title(), "exch": None, "type": "EQUITY"})
+    if not matches and re.fullmatch(r"[a-z]{1,5}([.\-][a-z]{1,3})?", text):
+        matches.append({"symbol": text.upper(), "name": text.upper(), "exch": None, "type": "EQUITY"})
+    return sorted(matches, key=lambda m: (m["symbol"].lower() != text, m["symbol"]))[:10]
 
 # ============================================
 # 4. Master Combined Endpoint
